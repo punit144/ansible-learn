@@ -1,0 +1,13 @@
+---
+# tasks file for linux_blockinfile_module
+- name: Add mappings to /etc/hosts
+  blockinfile:
+    create: yes
+    path: ~/BlockInFile_Example
+    block: |
+      {{ item.ip }} {{ item.name }}
+    marker: "# {mark} ANSIBLE MANAGED BLOCK {{ item.name }}"
+  loop:
+    - { name: dev-ansiblelearn.com, ip: 192.168.56.201 }
+    - { name: stage-ansbiblelearn.com, ip: 192.168.56.202 }
+    - { name: prod-ansiblelearn.com, ip: 192.168.56.203 }

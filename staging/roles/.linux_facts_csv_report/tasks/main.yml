@@ -1,0 +1,25 @@
+---
+# tasks file for linux_facts_csv_report
+- name: Generate hosts facts.
+  setup:
+    gather_subset: "min,hardware,network"
+
+- name: Creating CSV Headers
+  delegate_to: 'localhost'
+  run_once: true
+  lineinfile:
+    create: 'yes'
+    insertbefore: 'BOF'
+    line: 'Hostname,Current Hostname,Uptime(Days),Manufacturer,Product Name,Operating System,OS Version,Kernel,Architecture,Processor Name,CPU Cores,Memory(GB),IP Address'
+    path: '{{ playbook_dir }}/reports/facts_dump.csv'
+    state: 'present'
+
+- name: Dumping data to CSV file.
+  delegate_to: 'localhost'
+  lineinfile:
+    create: 'yes'
+    insertafter: 'EOF'
+    line: "{{ inventory_hostname }},{{ ansible_hostname }},{{ (ansible_uptime_seconds/60/60/24) | int }},{{ ansible_system_vendor | replace(',','') }},{{ ansible_product_name }},{{ ansible_distribution }},'{{ ansible_distribution_version }},{{ ansible_kernel }},{{ ansible_architecture }},{{ ansible_processor[2] }},{{ ansible_processor_vcpus }},{{ (ansible_memtotal_mb/1024)| int }},{{ ansible_all_ipv4_addresses | join(':') }}"
+    path: '{{ playbook_dir }}/reports/facts_dump.csv'
+    regexp: '^{{ inventory_hostname }},{{ ansible_hostname }},.*$'
+    state: 'present'

@@ -1,0 +1,17 @@
+---
+# tasks file for linux_user_module
+- name: create ansiblelearning on remote machines
+  user:
+    name: ansiblelearning
+    state: present
+    uid: 2001
+    shell: /bin/bash
+    comment: This is a ansible user
+    group: wheel
+
+- name: Now we validate if user created successfully.
+  shell: "getent passwd ansiblelearning;passwd -S ansiblelearning"
+  register: var_user
+
+- debug:
+    var: var_user.stdout_lines

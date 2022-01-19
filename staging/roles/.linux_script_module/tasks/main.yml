@@ -1,0 +1,5 @@
+---
+# tasks file for linux_script_module
+- name: Run a script which stored on ansible server.
+  script: 
+    cmd: /home/devops/scripts/ansible-learn/staging/my-shell-script.sh

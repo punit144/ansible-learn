@@ -1,0 +1,15 @@
+---
+# tasks file for linux_shell_module
+- name: Run a number of shell commands one by one using Shell Module.
+  shell: |
+    echo "This is Ansible Server Playbook Execution"
+    sleep 1
+    cat /etc/passwd | grep devops
+    sleep 1
+    cat /etc/motd
+    sleep 1
+    cat /etc/hosts
+    sleep 1
+    echo "This is Ansible Server Playbook Execution"
+  args:
+    executable: /bin/sh

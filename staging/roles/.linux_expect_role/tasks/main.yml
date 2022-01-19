@@ -1,0 +1,11 @@
+---
+# tasks file for linux_expect_role
+- name: This will reset the password of given user.
+  expect:
+    command: passwd "{{ my_user }}"
+    responses:
+      (?i)password: "root"
+  # you don't want to show passwords in your logs
+  no_log: true
+
+

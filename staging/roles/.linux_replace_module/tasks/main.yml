@@ -1,0 +1,8 @@
+---
+# tasks file for linux_replace_module
+- name: 'Replacing word testing with ansiblelearning'
+  replace:
+    dest: '~/replace.txt'
+    replace: 'AnsibleLearning'
+    regexp: 'testing'
+    backup: 'yes'

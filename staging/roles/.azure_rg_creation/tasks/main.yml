@@ -1,0 +1,16 @@
+---
+# tasks file for azure_rg_facts
+- name: Get facts for one resource group
+  azure_rm_resourcegroup_info:
+    name: ansible-rg
+  register: rg_list
+
+- name: Creating resource group
+  azure_rm_resourcegroup:
+    name: "new-ansible-rg"
+    location: "centralindia"
+  register: new_rg
+
+- name: List all rg
+  debug:
+    msg: "{{ rg_list }}\n\n{{ new_rg }}"

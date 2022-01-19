@@ -1,0 +1,14 @@
+---
+# tasks file for linux_command_module
+- name: Change the working directory to / root and run ls -ltr command.
+  command: ls -ltr
+  become: yes
+  become_user: root
+  args:
+    chdir: /
+  register: root_dirs_list
+
+- name: Showing all dirs on root level.
+  debug:
+    msg: "{{ root_dirs_list.stdout_lines }}"
+

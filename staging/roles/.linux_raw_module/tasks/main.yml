@@ -1,0 +1,4 @@
+---
+# tasks file for linux_raw_module
+- name: Bootstrap a host without python2 installed
+  raw: dnf install -y python2

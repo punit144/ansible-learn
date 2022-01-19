@@ -1,0 +1,8 @@
+[all]
+
+[all:children]
+redhat_new
+
+[redhat_new]
+ansible-learn-c7 ansible_connection=docker
+ansible-learn-c8 ansible_connection=docker
