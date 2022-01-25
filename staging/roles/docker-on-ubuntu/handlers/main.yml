@@ -1,6 +1,6 @@
 ---
 # handlers file for docker-on-ubuntu
-- name: check start
+- name: docker start
   service:
     name: docker
     state: started
