@@ -1,6 +1,0 @@
----
-- name: Testing ansible user module.
-  gather_facts: false
-  hosts: all
-  roles:
-    - linux_user_module

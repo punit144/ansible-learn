@@ -1,8 +1,8 @@
 [all]
 
 [all:children]
-redhat_new
+vagrant
 
-[redhat_new]
-ansible-learn-c7 ansible_connection=docker
-ansible-learn-c8 ansible_connection=docker
+[vagrant]
+centos7 ansible_host=192.168.29.210
+ubuntu21 ansible_host=192.168.29.101
