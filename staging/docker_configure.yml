@@ -1,0 +1,6 @@
+---
+- name: Install & configure docker & docker compose on Redhat distribution.
+  hosts: all
+  become: true
+  roles:
+    - docker-configure-centos
