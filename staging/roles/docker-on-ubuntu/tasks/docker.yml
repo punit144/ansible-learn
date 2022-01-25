@@ -11,7 +11,6 @@
   apt_key:
     url: "{{ docker_gpg_key }}"
     state: present
-    keyring: "{{ docker_key_path }}"
 
 - name: add docker repository to apt
   apt_repository:

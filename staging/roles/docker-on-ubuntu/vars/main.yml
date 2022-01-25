@@ -6,9 +6,8 @@ docker_dependencies:
   - gnupg
   - lsb-release
 docker_gpg_key: https://download.docker.com/linux/ubuntu/gpg
-docker_gpg_key_path: /usr/share/keyrings/docker-archive-keyring.gpg
 docker_repo_path: https://download.docker.com/linux/ubuntu
-docker_repo_cmd: "deb arch=amd64 signed-by={{ docker_gpg_key_path }} {{ docker_repo_path }}  focal stable"
+docker_repo_cmd: "deb {{ docker_repo_path }} {{ ansible_distribution_release }} test"
 docker_pkgs:
   - docker-ce
   - docker-ce-cli

@@ -1,4 +1,5 @@
 {
+    "_ansible_facts_gathered": true, 
     "ansible_all_ipv4_addresses": [
         "192.168.29.101", 
         "10.0.2.15"
@@ -23,16 +24,16 @@
     "ansible_date_time": {
         "date": "2022-01-25", 
         "day": "25", 
-        "epoch": "1643079631", 
+        "epoch": "1643081010", 
         "hour": "03", 
-        "iso8601": "2022-01-25T03:00:31Z", 
-        "iso8601_basic": "20220125T030031757647", 
-        "iso8601_basic_short": "20220125T030031", 
-        "iso8601_micro": "2022-01-25T03:00:31.757697Z", 
-        "minute": "00", 
+        "iso8601": "2022-01-25T03:23:30Z", 
+        "iso8601_basic": "20220125T032330834128", 
+        "iso8601_basic_short": "20220125T032330", 
+        "iso8601_micro": "2022-01-25T03:23:30.834175Z", 
+        "minute": "23", 
         "month": "01", 
-        "second": "31", 
-        "time": "03:00:31", 
+        "second": "30", 
+        "time": "03:23:30", 
         "tz": "UTC", 
         "tz_offset": "+0000", 
         "weekday": "Tuesday", 
@@ -41,15 +42,15 @@
         "year": "2022"
     }, 
     "ansible_default_ipv4": {
-        "address": "10.0.2.15", 
-        "alias": "enp0s3", 
-        "broadcast": "10.0.2.255", 
-        "gateway": "10.0.2.2", 
-        "interface": "enp0s3", 
-        "macaddress": "02:f0:0d:5a:4a:5f", 
+        "address": "192.168.29.101", 
+        "alias": "enp0s8", 
+        "broadcast": "192.168.29.255", 
+        "gateway": "192.168.29.1", 
+        "interface": "enp0s8", 
+        "macaddress": "08:00:27:bd:35:1e", 
         "mtu": 1500, 
         "netmask": "255.255.255.0", 
-        "network": "10.0.2.0", 
+        "network": "192.168.29.0", 
         "type": "ether"
     }, 
     "ansible_default_ipv6": {
@@ -357,8 +358,8 @@
         ]
     }, 
     "ansible_domain": "", 
-    "ansible_effective_group_id": 1000, 
-    "ansible_effective_user_id": 1000, 
+    "ansible_effective_group_id": 0, 
+    "ansible_effective_user_id": 0, 
     "ansible_enp0s3": {
         "active": true, 
         "device": "enp0s3", 
@@ -551,23 +552,20 @@
         "type": "ether"
     }, 
     "ansible_env": {
-        "HOME": "/home/vagrant", 
+        "HOME": "/root", 
         "LANG": "C.UTF-8", 
         "LC_CTYPE": "en_US.UTF-8", 
-        "LOGNAME": "vagrant", 
-        "MOTD_SHOWN": "pam", 
-        "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin", 
+        "LOGNAME": "root", 
+        "MAIL": "/var/mail/root", 
+        "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin", 
         "PWD": "/home/vagrant", 
         "SHELL": "/bin/bash", 
-        "SHLVL": "0", 
-        "SSH_CLIENT": "192.168.29.250 54736 22", 
-        "SSH_CONNECTION": "192.168.29.250 54736 192.168.29.101 22", 
-        "USER": "vagrant", 
-        "XDG_RUNTIME_DIR": "/run/user/1000", 
-        "XDG_SESSION_CLASS": "user", 
-        "XDG_SESSION_ID": "11", 
-        "XDG_SESSION_TYPE": "tty", 
-        "_": "/bin/sh"
+        "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-robsbdorxfukiocwffburafirvftrsfq ; /usr/bin/python3", 
+        "SUDO_GID": "1000", 
+        "SUDO_UID": "1000", 
+        "SUDO_USER": "vagrant", 
+        "TERM": "unknown", 
+        "USER": "root"
     }, 
     "ansible_fibre_channel_wwn": [], 
     "ansible_fips": false, 
@@ -681,18 +679,23 @@
         "major_release": "21", 
         "release": "21.10"
     }, 
+    "ansible_lvm": {
+        "lvs": {}, 
+        "pvs": {}, 
+        "vgs": {}
+    }, 
     "ansible_machine": "x86_64", 
     "ansible_machine_id": "8ee44c53ba88428992783e2ab025c85a", 
-    "ansible_memfree_mb": 485, 
+    "ansible_memfree_mb": 475, 
     "ansible_memory_mb": {
         "nocache": {
-            "free": 795, 
-            "used": 176
+            "free": 792, 
+            "used": 179
         }, 
         "real": {
-            "free": 485, 
+            "free": 475, 
             "total": 971, 
-            "used": 486
+            "used": 496
         }, 
         "swap": {
             "cached": 0, 
@@ -704,18 +707,18 @@
     "ansible_memtotal_mb": 971, 
     "ansible_mounts": [
         {
-            "block_available": 9810865, 
+            "block_available": 9810826, 
             "block_size": 4096, 
             "block_total": 10148403, 
-            "block_used": 337538, 
+            "block_used": 337577, 
             "device": "/dev/sda1", 
             "fstype": "ext4", 
-            "inode_available": 5049165, 
+            "inode_available": 5049161, 
             "inode_total": 5120000, 
-            "inode_used": 70835, 
+            "inode_used": 70839, 
             "mount": "/", 
             "options": "rw,relatime,discard,errors=remount-ro", 
-            "size_available": 40185303040, 
+            "size_available": 40185143296, 
             "size_total": 41567858688, 
             "uuid": "6db4808c-bc29-458b-846d-f4fb7600463d"
         }, 
@@ -793,8 +796,8 @@
     "ansible_processor_threads_per_core": 1, 
     "ansible_processor_vcpus": 2, 
     "ansible_product_name": "VirtualBox", 
-    "ansible_product_serial": "NA", 
-    "ansible_product_uuid": "NA", 
+    "ansible_product_serial": "0", 
+    "ansible_product_uuid": "85a35163-84e3-f146-9405-dc34e87dba4a", 
     "ansible_product_version": "1.2", 
     "ansible_python": {
         "executable": "/usr/bin/python3", 
@@ -816,8 +819,8 @@
         ]
     }, 
     "ansible_python_version": "3.9.7", 
-    "ansible_real_group_id": 1000, 
-    "ansible_real_user_id": 1000, 
+    "ansible_real_group_id": 0, 
+    "ansible_real_user_id": 0, 
     "ansible_selinux": {
         "status": "Missing selinux Python library"
     }, 
@@ -830,18 +833,16 @@
     "ansible_swapfree_mb": 0, 
     "ansible_swaptotal_mb": 0, 
     "ansible_system": "Linux", 
-    "ansible_system_capabilities": [
-        ""
-    ], 
-    "ansible_system_capabilities_enforced": "True", 
+    "ansible_system_capabilities": [], 
+    "ansible_system_capabilities_enforced": "False", 
     "ansible_system_vendor": "innotek GmbH", 
-    "ansible_uptime_seconds": 2771, 
-    "ansible_user_dir": "/home/vagrant", 
-    "ansible_user_gecos": ",,,", 
-    "ansible_user_gid": 1000, 
-    "ansible_user_id": "vagrant", 
+    "ansible_uptime_seconds": 4150, 
+    "ansible_user_dir": "/root", 
+    "ansible_user_gecos": "root", 
+    "ansible_user_gid": 0, 
+    "ansible_user_id": "root", 
     "ansible_user_shell": "/bin/bash", 
-    "ansible_user_uid": 1000, 
+    "ansible_user_uid": 0, 
     "ansible_userspace_architecture": "x86_64", 
     "ansible_userspace_bits": "64", 
     "ansible_virtualization_role": "guest", 
