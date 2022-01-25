@@ -1,0 +1,53 @@
+---
+# tasks file for docker-on-ubuntu
+- name: install dependencies
+  apt:
+    name: "{{item}}"
+    state: present
+    update_cache: yes
+  loop: "{{ docker_dependencies }}"
+
+- name: add GPG key
+  apt_key:
+    url: "{{ docker_gpg_key }}"
+    state: present
+    keyring: "{{ docker_key_path }}"
+
+- name: add docker repository to apt
+  apt_repository:
+    repo: "{{ docker_repo_cmd }}"
+    state: present
+
+- name: install docker
+  apt:
+    name: "{{ item }}"
+    state: latest
+    update_cache: yes
+  loop: "{{ docker_pkgs }}"
+  notify: docker start
+
+- name: Running handler now.
+  meta: flush_handlers
+
+- name: Ensure group "docker" exists
+  group:
+    name: docker
+    state: present
+
+- name: adding user vagrant to docker group
+  user:
+    name: "{{ docker_user }}"
+    groups: docker
+    append: yes
+
+- name: Install docker-compose
+  get_url:
+    url: "{{ docker_compose_url }}"
+    dest: /usr/local/bin/docker-compose
+    mode: 'u+x,g+x'
+
+- name: Change file ownership, group and permissions
+  file:
+    path: /usr/local/bin/docker-compose
+    owner: "{{ docker_user }}"
+    group: "{{ docker_user }}"
