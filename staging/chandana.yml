@@ -1,0 +1,29 @@
+---
+- name: Starting Playbook to Read contents of the file.
+  hosts: localhost
+  gather_facts: false
+  vars:
+    my_path: "/home/devops/playbook.txt"
+  tasks:
+    - name: display the contents of file
+      command: "cat {{ my_path }}"
+      register: command_output
+      ignore_errors: true
+
+    - name: check if file exists
+      stat:
+        path: "{{ my_path }}"
+      register: file_output
+
+    - name: if file exist.
+      debug:
+        msg: "file exists"
+      when: file_output.stat.exists
+
+    - name: if file does not exists
+      debug:
+        msg: "file does not exists"
+      when: not file_output.stat.exists
+
+    - debug: var=command_output.stdout_lines
+
