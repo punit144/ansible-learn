@@ -1,15 +1,10 @@
 [all]
 
 [all:children]
-vagrant
 debian_old
 debian_new
 redhat_old
 redhat_new
-
-[vagrant]
-centos7 ansible_host=192.168.29.210
-ubuntu21 ansible_host=192.168.29.101
 
 [debian_old]
 ansible-learn-u14 ansible_connection=docker
@@ -31,4 +26,3 @@ ansible-learn-oel8 ansible_connection=docker
 ansible-learn-c7 ansible_connection=docker
 ansible-learn-c8 ansible_connection=docker
 #ansible-learn-c9 ansible_connection=docker
-
