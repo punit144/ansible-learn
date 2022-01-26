@@ -23,10 +23,12 @@
     state: latest
     update_cache: yes
   loop: "{{ docker_pkgs }}"
-  notify: docker start
 
-- name: Running handler now.
-  meta: flush_handlers
+- name: Starting & Enable docker.
+  service:
+    name: docker
+    state: started
+    enabled: yes
 
 - name: Ensure group "docker" exists
   group:
@@ -50,3 +52,9 @@
     path: /usr/local/bin/docker-compose
     owner: "{{ docker_user }}"
     group: "{{ docker_user }}"
+
+- name: Testing Docker by running Docker run hello=world
+  command: docker run hello-world
+  register: docker_test
+
+- debug: msg="{{ docker_test.stdout_lines }}"

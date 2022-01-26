@@ -1,5 +1,5 @@
 ---
-- name: Install & configure docker & docker compose on Redhat distribution.
+- name: Install & configure docker & docker compose on Ubuntu distribution.
   hosts: all
   become: true
   vars:
