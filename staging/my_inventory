@@ -20,7 +20,7 @@ ansible-learn-deb9 ansible_connection=docker
 
 [debian_new]
 ansible-learn-u18 ansible_connection=docker
-#ansible-learn-u20 ansible_connection=docker
+ansible-learn-u20 ansible_connection=docker
 ansible-learn-deb10 ansible_connection=docker
 
 [redhat_old]
