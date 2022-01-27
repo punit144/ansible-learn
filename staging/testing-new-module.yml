@@ -1,0 +1,6 @@
+---
+- name: Updating INI file available in /etc/ansible/ansible.cfg
+  hosts: all
+  become: true
+  roles:
+    - linux_ini_file_update

@@ -1,8 +1,0 @@
----
-- name: Install & configure docker & docker compose on Ubuntu distribution.
-  hosts: all
-  become: true
-  vars:
-    docker_user: vagrant
-  roles:
-    - docker-on-ubuntu

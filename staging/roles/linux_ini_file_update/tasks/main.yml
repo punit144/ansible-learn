@@ -1,0 +1,11 @@
+---
+# tasks file for linux_ini_file_update
+# Before Ansible 2.3, option 'dest' was used instead of 'path'
+- name: Ensure "forks=50 is in section "[defaults]" in specified file
+  ini_file:
+    path: /etc/ansible/ansible.cfg
+    section: default
+    option: forks
+    value: 50
+    mode: '0655'
+    backup: yes
