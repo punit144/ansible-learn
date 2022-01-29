@@ -1,0 +1,10 @@
+---
+# tasks file for linux_stat_module
+- name: Get stats of the FS object
+  stat:
+    path: /etc/sudoers.d
+  register: sudoers_stat
+- name: Print stat results
+  debug:
+    msg: "Sudoers.d directory exist and is directory"
+  when: sudoers_stat.stat.isdir is defined and sudoers_stat.stat.isdir

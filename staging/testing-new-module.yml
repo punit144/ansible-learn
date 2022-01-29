@@ -1,6 +1,6 @@
 ---
-- name: Updating INI file available in /etc/ansible/ansible.cfg
+- name: Testing Ansible stat module to determine if file exist and is dir.
   hosts: all
   become: true
   roles:
-    - linux_ini_file_update
+    - linux_stat_module
