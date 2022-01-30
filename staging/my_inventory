@@ -8,10 +8,7 @@ redhat_old
 redhat_new
 
 [vagrant]
-centos7 ansible_host=192.168.29.200
-docker1 ansible_host=192.168.29.201
-docker2 ansible_host=192.168.29.203
-docker3 ansible_host=192.168.29.204
+centos8 ansible_host=192.168.1.203
 
 [debian_old]
 ansible-learn-u14 ansible_connection=docker

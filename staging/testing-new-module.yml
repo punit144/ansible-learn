@@ -1,6 +1,6 @@
 ---
-- name: Testing Ansible stat module to determine if file exist and is dir.
-  hosts: all
+- name: Testing ansible first found buildin module.
+  hosts: localhost
   become: true
   roles:
-    - linux_stat_module
+    - linux_first_found_module
