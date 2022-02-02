@@ -1,0 +1,9 @@
+---
+# tasks file for network_ip_validation
+- name: Check if 192.168.1.200 is a valid IP address
+  set_fact:
+    data: "{{ '192.168.1.200' is ansible.utils.ip }}"
+
+- name: Check if 2001:db8:a::123 is a valid IP address
+  set_fact:
+    data: "{{ '2001:db8:a::123' is ansible.utils.ip }}"

@@ -6,6 +6,7 @@
       - wget
       - java-1.8.0-openjdk
       - epel-release
+      - systemd
 
 - name: Download jenkins.repo
   get_url:
