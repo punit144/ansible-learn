@@ -1,0 +1,41 @@
+---
+# tasks file for linux_new_user_creation
+- name: Adding new user
+  user:
+    name: "{{ user_name }}"
+    groups: sudo
+    shell: /bin/bash
+    append: yes
+    generate_ssh_key: yes
+    ssh_key_file: .ssh/id_rsa
+  tags:
+    - user_creation
+
+- name: Adding user to sudoers
+  lineinfile:
+   dest: /etc/sudoers
+   state: present
+   regexp: "^%{{ user_name }}"
+   line: "%{{ user_name }} ALL=(ALL) NOPASSWD:ALL"
+   validate: 'visudo -cf %s'
+  tags:
+    - add_to_sudoers
+
+- name: Adding public key to authorized_keys
+  file:
+    src: "/home/{{ user_name }}/.ssh/id_rsa.pub"
+    dest: "/home/{{ user_name }}/.ssh/authorized_keys"
+    state: link
+  tags:
+    - add_ssh_key
+
+- name: Fetch the private key
+  shell: "cat /home/{{ user_name }}/.ssh/id_rsa"
+  register: ssh_key
+  tags:
+    - fetch_created_keys
+
+- debug:
+    var: ssh_key.stdout_lines
+  tags:
+    - display_keys

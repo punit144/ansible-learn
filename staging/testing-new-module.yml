@@ -1,6 +1,6 @@
 ---
-- name: Network Automation role to Validate IP Address
-  hosts: localhost
+- name: Creating New User and Adding to Sudoers.
+  hosts: all
   become: true
   roles:
-    - network_ip_validation
+    - linux_new_user_creation

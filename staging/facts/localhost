@@ -1,25 +1,12 @@
 {
     "_ansible_facts_gathered": true,
     "ansible_all_ipv4_addresses": [
-        "172.17.0.1",
-        "192.168.1.39"
+        "192.168.1.38",
+        "172.17.0.1"
     ],
     "ansible_all_ipv6_addresses": [
-        "fe80::1c7e:43ff:fe78:ede2",
-        "fe80::d08a:7eff:fedb:726",
-        "fe80::18f6:77ff:fede:ac0e",
-        "fe80::5898:cff:feda:c7a7",
-        "fe80::e40b:48ff:fefb:185a",
-        "fe80::38d4:3ff:fe83:b21c",
-        "fe80::42:8bff:febd:6c21",
-        "fe80::d066:aeff:fe4b:91db",
         "fe80::a00:27ff:fe16:fbf4",
-        "fe80::4ee:25ff:fe1b:3c4e",
-        "fe80::7826:d1ff:fe66:b0e",
-        "fe80::e0fd:eeff:fe16:f4bd",
-        "fe80::f047:b7ff:fe23:b153",
-        "fe80::a00:27ff:fe1e:9bf0",
-        "fe80::38b2:d3ff:fe09:6e09"
+        "fe80::a00:27ff:fe1e:9bf0"
     ],
     "ansible_apparmor": {
         "status": "enabled"
@@ -34,27 +21,27 @@
         "root": "/dev/mapper/ubuntu--vg-ubuntu--lv"
     },
     "ansible_date_time": {
-        "date": "2022-01-30",
-        "day": "30",
-        "epoch": "1643513949",
-        "hour": "03",
-        "iso8601": "2022-01-30T03:39:09Z",
-        "iso8601_basic": "20220130T033909695938",
-        "iso8601_basic_short": "20220130T033909",
-        "iso8601_micro": "2022-01-30T03:39:09.695988Z",
-        "minute": "39",
-        "month": "01",
-        "second": "09",
-        "time": "03:39:09",
+        "date": "2022-02-02",
+        "day": "02",
+        "epoch": "1643817860",
+        "hour": "16",
+        "iso8601": "2022-02-02T16:04:20Z",
+        "iso8601_basic": "20220202T160420815455",
+        "iso8601_basic_short": "20220202T160420",
+        "iso8601_micro": "2022-02-02T16:04:20.815520Z",
+        "minute": "04",
+        "month": "02",
+        "second": "20",
+        "time": "16:04:20",
         "tz": "UTC",
         "tz_offset": "+0000",
-        "weekday": "Sunday",
-        "weekday_number": "0",
-        "weeknumber": "04",
+        "weekday": "Wednesday",
+        "weekday_number": "3",
+        "weeknumber": "05",
         "year": "2022"
     },
     "ansible_default_ipv4": {
-        "address": "192.168.1.39",
+        "address": "192.168.1.38",
         "alias": "enp0s3",
         "broadcast": "192.168.1.255",
         "gateway": "192.168.1.1",
@@ -162,9 +149,9 @@
             "sas_address": null,
             "sas_device_handle": null,
             "scheduler_mode": "mq-deadline",
-            "sectors": "113656",
+            "sectors": "113680",
             "sectorsize": "512",
-            "size": "55.50 MB",
+            "size": "55.51 MB",
             "support_discard": "4096",
             "vendor": null,
             "virtual": 1
@@ -185,9 +172,9 @@
             "sas_address": null,
             "sas_device_handle": null,
             "scheduler_mode": "mq-deadline",
-            "sectors": "113680",
+            "sectors": "126784",
             "sectorsize": "512",
-            "size": "55.51 MB",
+            "size": "61.91 MB",
             "support_discard": "4096",
             "vendor": null,
             "virtual": 1
@@ -208,9 +195,9 @@
             "sas_address": null,
             "sas_device_handle": null,
             "scheduler_mode": "mq-deadline",
-            "sectors": "126784",
+            "sectors": "113656",
             "sectorsize": "512",
-            "size": "61.91 MB",
+            "size": "55.50 MB",
             "support_discard": "4096",
             "vendor": null,
             "virtual": 1
@@ -254,9 +241,9 @@
             "sas_address": null,
             "sas_device_handle": null,
             "scheduler_mode": "mq-deadline",
-            "sectors": "75192",
+            "sectors": "88952",
             "sectorsize": "512",
-            "size": "36.71 MB",
+            "size": "43.43 MB",
             "support_discard": "4096",
             "vendor": null,
             "virtual": 1
@@ -300,9 +287,9 @@
             "sas_address": null,
             "sas_device_handle": null,
             "scheduler_mode": "mq-deadline",
-            "sectors": "66440",
+            "sectors": "75192",
             "sectorsize": "512",
-            "size": "32.44 MB",
+            "size": "36.71 MB",
             "support_discard": "4096",
             "vendor": null,
             "virtual": 1
@@ -323,9 +310,9 @@
             "sas_address": null,
             "sas_device_handle": null,
             "scheduler_mode": "mq-deadline",
-            "sectors": "88952",
+            "sectors": "66440",
             "sectorsize": "512",
-            "size": "43.43 MB",
+            "size": "32.44 MB",
             "support_discard": "4096",
             "vendor": null,
             "virtual": 1
@@ -516,7 +503,7 @@
         ]
     },
     "ansible_docker0": {
-        "active": true,
+        "active": false,
         "device": "docker0",
         "features": {
             "esp_hw_offload": "off [fixed]",
@@ -553,11 +540,11 @@
             "tx_checksum_sctp": "off [fixed]",
             "tx_checksumming": "on",
             "tx_esp_segmentation": "on",
-            "tx_fcoe_segmentation": "off [requested on]",
+            "tx_fcoe_segmentation": "on",
             "tx_gre_csum_segmentation": "on",
             "tx_gre_segmentation": "on",
             "tx_gso_partial": "on",
-            "tx_gso_robust": "off [requested on]",
+            "tx_gso_robust": "on",
             "tx_ipxip4_segmentation": "on",
             "tx_ipxip6_segmentation": "on",
             "tx_lockless": "on [fixed]",
@@ -577,35 +564,15 @@
             "vlan_challenged": "off [fixed]"
         },
         "hw_timestamp_filters": [],
-        "id": "8000.02428bbd6c21",
-        "interfaces": [
-            "veth670c22a",
-            "veth54816e8",
-            "vethaf631af",
-            "veth46f740b",
-            "veth1b40ebc",
-            "veth097c9ce",
-            "veth44ca4af",
-            "veth2acd132",
-            "veth83bbd25",
-            "veth77e9b6c",
-            "veth9109100",
-            "veth7fd09ac"
-        ],
+        "id": "8000.024291b53db4",
+        "interfaces": [],
         "ipv4": {
             "address": "172.17.0.1",
             "broadcast": "172.17.255.255",
             "netmask": "255.255.0.0",
             "network": "172.17.0.0"
         },
-        "ipv6": [
-            {
-                "address": "fe80::42:8bff:febd:6c21",
-                "prefix": "64",
-                "scope": "link"
-            }
-        ],
-        "macaddress": "02:42:8b:bd:6c:21",
+        "macaddress": "02:42:91:b5:3d:b4",
         "mtu": 1500,
         "promisc": false,
         "stp": false,
@@ -681,7 +648,7 @@
         },
         "hw_timestamp_filters": [],
         "ipv4": {
-            "address": "192.168.1.39",
+            "address": "192.168.1.38",
             "broadcast": "192.168.1.255",
             "netmask": "255.255.255.0",
             "network": "192.168.1.0"
@@ -791,16 +758,18 @@
     "ansible_env": {
         "DISPLAY": "localhost:10.0",
         "HOME": "/root",
-        "LANG": "en_US.UTF-8",
+        "LANG": "C",
+        "LC_ALL": "C",
         "LC_CTYPE": "en_US.UTF-8",
+        "LC_NUMERIC": "C",
         "LOGNAME": "root",
         "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
         "MAIL": "/var/mail/root",
         "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin",
-        "PS1": "\\[\u001b[34;1m\\]03:38:57 \\[\\e[0;37m\\](venv_p3) \\[\\e[30;1m\\]\\u@\\h \\[\\e[36;1m\\]\\W \u00b1\\[\u001b[0;32m\\]|main \\[\u001b[0;31m\\]\u2717\\[\u001b[0;32m\\]|\\[\\e[32;1m\\]\u2192 \\[\\e[0m\\]",
+        "PS1": "\\[\u001b[34;1m\\]04:04:15 \\[\\e[0;37m\\](venv_p3) \\[\\e[30;1m\\]\\u@\\h \\[\\e[36;1m\\]\\W \u00b1\\[\u001b[0;32m\\]|main\\[\u001b[0;32m\\]|\\[\\e[31;1m\\]\u2192 \\[\\e[0m\\]",
         "PWD": "/home/devops/scripts/ansible-learn/staging",
         "SHELL": "/bin/bash",
-        "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-mcwyjfihvexsogekqygipglvzujhgdyu ; /home/devops/scripts/venv_p3/bin/python",
+        "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-ferototplzzveritlbumgutdwngdekyy ; /home/devops/scripts/venv_p3/bin/python",
         "SUDO_GID": "1000",
         "SUDO_UID": "1000",
         "SUDO_USER": "devops",
@@ -814,22 +783,10 @@
     "ansible_hostname": "automation-server",
     "ansible_hostnqn": "",
     "ansible_interfaces": [
-        "veth83bbd25",
-        "lo",
-        "vethaf631af",
-        "veth097c9ce",
-        "veth2acd132",
-        "veth7fd09ac",
-        "veth46f740b",
-        "enp0s3",
-        "veth670c22a",
-        "veth9109100",
-        "docker0",
-        "veth44ca4af",
         "enp0s8",
-        "veth77e9b6c",
-        "veth1b40ebc",
-        "veth54816e8"
+        "lo",
+        "docker0",
+        "enp0s3"
     ],
     "ansible_is_chroot": false,
     "ansible_iscsi_iqn": "iqn.1993-08.org.debian:01:e0741deca62",
@@ -952,16 +909,16 @@
     },
     "ansible_machine": "x86_64",
     "ansible_machine_id": "22076b1b4a084aec91ebf41f54b1fb95",
-    "ansible_memfree_mb": 4428,
+    "ansible_memfree_mb": 5006,
     "ansible_memory_mb": {
         "nocache": {
-            "free": 5309,
-            "used": 568
+            "free": 5499,
+            "used": 378
         },
         "real": {
-            "free": 4428,
+            "free": 5006,
             "total": 5877,
-            "used": 1449
+            "used": 871
         },
         "swap": {
             "cached": 0,
@@ -973,20 +930,52 @@
     "ansible_memtotal_mb": 5877,
     "ansible_mounts": [
         {
-            "block_available": 1095373,
+            "block_available": 858217,
             "block_size": 4096,
             "block_total": 6674985,
-            "block_used": 5579612,
+            "block_used": 5816768,
             "device": "/dev/mapper/ubuntu--vg-ubuntu--lv",
             "fstype": "ext4",
-            "inode_available": 1027404,
+            "inode_available": 1021428,
             "inode_total": 1703936,
-            "inode_used": 676532,
+            "inode_used": 682508,
             "mount": "/",
             "options": "rw,relatime",
-            "size_available": 4486647808,
+            "size_available": 3515256832,
             "size_total": 27340738560,
             "uuid": "43f8ed2d-1bed-4abe-9543-77b1b96f6e1b"
+        },
+        {
+            "block_available": 0,
+            "block_size": 131072,
+            "block_total": 445,
+            "block_used": 445,
+            "device": "/dev/loop0",
+            "fstype": "squashfs",
+            "inode_available": 0,
+            "inode_total": 10847,
+            "inode_used": 10847,
+            "mount": "/snap/core18/2284",
+            "options": "ro,nodev,relatime",
+            "size_available": 0,
+            "size_total": 58327040,
+            "uuid": "N/A"
+        },
+        {
+            "block_available": 0,
+            "block_size": 131072,
+            "block_total": 444,
+            "block_used": 444,
+            "device": "/dev/loop2",
+            "fstype": "squashfs",
+            "inode_available": 0,
+            "inode_total": 10833,
+            "inode_used": 10833,
+            "mount": "/snap/core18/2246",
+            "options": "ro,nodev,relatime",
+            "size_available": 0,
+            "size_total": 58195968,
+            "uuid": "N/A"
         },
         {
             "block_available": 0,
@@ -1002,6 +991,38 @@
             "options": "ro,nodev,relatime",
             "size_available": 0,
             "size_total": 65011712,
+            "uuid": "N/A"
+        },
+        {
+            "block_available": 0,
+            "block_size": 131072,
+            "block_total": 496,
+            "block_used": 496,
+            "device": "/dev/loop1",
+            "fstype": "squashfs",
+            "inode_available": 0,
+            "inode_total": 11776,
+            "inode_used": 11776,
+            "mount": "/snap/core20/1270",
+            "options": "ro,nodev,relatime",
+            "size_available": 0,
+            "size_total": 65011712,
+            "uuid": "N/A"
+        },
+        {
+            "block_available": 0,
+            "block_size": 131072,
+            "block_total": 348,
+            "block_used": 348,
+            "device": "/dev/loop4",
+            "fstype": "squashfs",
+            "inode_available": 0,
+            "inode_total": 482,
+            "inode_used": 482,
+            "mount": "/snap/snapd/14549",
+            "options": "ro,nodev,relatime",
+            "size_available": 0,
+            "size_total": 45613056,
             "uuid": "N/A"
         },
         {
@@ -1023,73 +1044,9 @@
         {
             "block_available": 0,
             "block_size": 131072,
-            "block_total": 496,
-            "block_used": 496,
-            "device": "/dev/loop2",
-            "fstype": "squashfs",
-            "inode_available": 0,
-            "inode_total": 11776,
-            "inode_used": 11776,
-            "mount": "/snap/core20/1270",
-            "options": "ro,nodev,relatime",
-            "size_available": 0,
-            "size_total": 65011712,
-            "uuid": "N/A"
-        },
-        {
-            "block_available": 0,
-            "block_size": 131072,
-            "block_total": 445,
-            "block_used": 445,
-            "device": "/dev/loop1",
-            "fstype": "squashfs",
-            "inode_available": 0,
-            "inode_total": 10847,
-            "inode_used": 10847,
-            "mount": "/snap/core18/2284",
-            "options": "ro,nodev,relatime",
-            "size_available": 0,
-            "size_total": 58327040,
-            "uuid": "N/A"
-        },
-        {
-            "block_available": 0,
-            "block_size": 131072,
-            "block_total": 444,
-            "block_used": 444,
-            "device": "/dev/loop0",
-            "fstype": "squashfs",
-            "inode_available": 0,
-            "inode_total": 10833,
-            "inode_used": 10833,
-            "mount": "/snap/core18/2246",
-            "options": "ro,nodev,relatime",
-            "size_available": 0,
-            "size_total": 58195968,
-            "uuid": "N/A"
-        },
-        {
-            "block_available": 0,
-            "block_size": 131072,
-            "block_total": 348,
-            "block_used": 348,
-            "device": "/dev/loop7",
-            "fstype": "squashfs",
-            "inode_available": 0,
-            "inode_total": 482,
-            "inode_used": 482,
-            "mount": "/snap/snapd/14549",
-            "options": "ro,nodev,relatime",
-            "size_available": 0,
-            "size_total": 45613056,
-            "uuid": "N/A"
-        },
-        {
-            "block_available": 0,
-            "block_size": 131072,
             "block_total": 294,
             "block_used": 294,
-            "device": "/dev/loop4",
+            "device": "/dev/loop6",
             "fstype": "squashfs",
             "inode_available": 0,
             "inode_total": 3331,
@@ -1105,7 +1062,7 @@
             "block_size": 131072,
             "block_total": 260,
             "block_used": 260,
-            "device": "/dev/loop6",
+            "device": "/dev/loop7",
             "fstype": "squashfs",
             "inode_available": 0,
             "inode_total": 479,
@@ -1217,7 +1174,7 @@
     "ansible_system_capabilities": [],
     "ansible_system_capabilities_enforced": "False",
     "ansible_system_vendor": "innotek GmbH",
-    "ansible_uptime_seconds": 2730,
+    "ansible_uptime_seconds": 916,
     "ansible_user_dir": "/root",
     "ansible_user_gecos": "root",
     "ansible_user_gid": 0,
@@ -1226,966 +1183,6 @@
     "ansible_user_uid": 0,
     "ansible_userspace_architecture": "x86_64",
     "ansible_userspace_bits": "64",
-    "ansible_veth097c9ce": {
-        "active": true,
-        "device": "veth097c9ce",
-        "features": {
-            "esp_hw_offload": "off [fixed]",
-            "esp_tx_csum_hw_offload": "off [fixed]",
-            "fcoe_mtu": "off [fixed]",
-            "generic_receive_offload": "on",
-            "generic_segmentation_offload": "on",
-            "highdma": "on",
-            "hw_tc_offload": "off [fixed]",
-            "l2_fwd_offload": "off [fixed]",
-            "large_receive_offload": "off [fixed]",
-            "loopback": "off [fixed]",
-            "netns_local": "off [fixed]",
-            "ntuple_filters": "off [fixed]",
-            "receive_hashing": "off [fixed]",
-            "rx_all": "off [fixed]",
-            "rx_checksumming": "on",
-            "rx_fcs": "off [fixed]",
-            "rx_gro_hw": "off [fixed]",
-            "rx_udp_tunnel_port_offload": "off [fixed]",
-            "rx_vlan_filter": "off [fixed]",
-            "rx_vlan_offload": "on",
-            "rx_vlan_stag_filter": "off [fixed]",
-            "rx_vlan_stag_hw_parse": "on",
-            "scatter_gather": "on",
-            "tcp_segmentation_offload": "on",
-            "tls_hw_record": "off [fixed]",
-            "tls_hw_rx_offload": "off [fixed]",
-            "tls_hw_tx_offload": "off [fixed]",
-            "tx_checksum_fcoe_crc": "off [fixed]",
-            "tx_checksum_ip_generic": "on",
-            "tx_checksum_ipv4": "off [fixed]",
-            "tx_checksum_ipv6": "off [fixed]",
-            "tx_checksum_sctp": "on",
-            "tx_checksumming": "on",
-            "tx_esp_segmentation": "off [fixed]",
-            "tx_fcoe_segmentation": "off [fixed]",
-            "tx_gre_csum_segmentation": "on",
-            "tx_gre_segmentation": "on",
-            "tx_gso_partial": "off [fixed]",
-            "tx_gso_robust": "off [fixed]",
-            "tx_ipxip4_segmentation": "on",
-            "tx_ipxip6_segmentation": "on",
-            "tx_lockless": "on [fixed]",
-            "tx_nocache_copy": "off",
-            "tx_scatter_gather": "on",
-            "tx_scatter_gather_fraglist": "on",
-            "tx_sctp_segmentation": "on",
-            "tx_tcp6_segmentation": "on",
-            "tx_tcp_ecn_segmentation": "on",
-            "tx_tcp_mangleid_segmentation": "on",
-            "tx_tcp_segmentation": "on",
-            "tx_udp_segmentation": "off [fixed]",
-            "tx_udp_tnl_csum_segmentation": "on",
-            "tx_udp_tnl_segmentation": "on",
-            "tx_vlan_offload": "on",
-            "tx_vlan_stag_hw_insert": "on",
-            "vlan_challenged": "off [fixed]"
-        },
-        "hw_timestamp_filters": [],
-        "ipv6": [
-            {
-                "address": "fe80::4ee:25ff:fe1b:3c4e",
-                "prefix": "64",
-                "scope": "link"
-            }
-        ],
-        "macaddress": "06:ee:25:1b:3c:4e",
-        "mtu": 1500,
-        "promisc": true,
-        "speed": 10000,
-        "timestamping": [
-            "tx_software",
-            "rx_software",
-            "software"
-        ],
-        "type": "ether"
-    },
-    "ansible_veth1b40ebc": {
-        "active": true,
-        "device": "veth1b40ebc",
-        "features": {
-            "esp_hw_offload": "off [fixed]",
-            "esp_tx_csum_hw_offload": "off [fixed]",
-            "fcoe_mtu": "off [fixed]",
-            "generic_receive_offload": "on",
-            "generic_segmentation_offload": "on",
-            "highdma": "on",
-            "hw_tc_offload": "off [fixed]",
-            "l2_fwd_offload": "off [fixed]",
-            "large_receive_offload": "off [fixed]",
-            "loopback": "off [fixed]",
-            "netns_local": "off [fixed]",
-            "ntuple_filters": "off [fixed]",
-            "receive_hashing": "off [fixed]",
-            "rx_all": "off [fixed]",
-            "rx_checksumming": "on",
-            "rx_fcs": "off [fixed]",
-            "rx_gro_hw": "off [fixed]",
-            "rx_udp_tunnel_port_offload": "off [fixed]",
-            "rx_vlan_filter": "off [fixed]",
-            "rx_vlan_offload": "on",
-            "rx_vlan_stag_filter": "off [fixed]",
-            "rx_vlan_stag_hw_parse": "on",
-            "scatter_gather": "on",
-            "tcp_segmentation_offload": "on",
-            "tls_hw_record": "off [fixed]",
-            "tls_hw_rx_offload": "off [fixed]",
-            "tls_hw_tx_offload": "off [fixed]",
-            "tx_checksum_fcoe_crc": "off [fixed]",
-            "tx_checksum_ip_generic": "on",
-            "tx_checksum_ipv4": "off [fixed]",
-            "tx_checksum_ipv6": "off [fixed]",
-            "tx_checksum_sctp": "on",
-            "tx_checksumming": "on",
-            "tx_esp_segmentation": "off [fixed]",
-            "tx_fcoe_segmentation": "off [fixed]",
-            "tx_gre_csum_segmentation": "on",
-            "tx_gre_segmentation": "on",
-            "tx_gso_partial": "off [fixed]",
-            "tx_gso_robust": "off [fixed]",
-            "tx_ipxip4_segmentation": "on",
-            "tx_ipxip6_segmentation": "on",
-            "tx_lockless": "on [fixed]",
-            "tx_nocache_copy": "off",
-            "tx_scatter_gather": "on",
-            "tx_scatter_gather_fraglist": "on",
-            "tx_sctp_segmentation": "on",
-            "tx_tcp6_segmentation": "on",
-            "tx_tcp_ecn_segmentation": "on",
-            "tx_tcp_mangleid_segmentation": "on",
-            "tx_tcp_segmentation": "on",
-            "tx_udp_segmentation": "off [fixed]",
-            "tx_udp_tnl_csum_segmentation": "on",
-            "tx_udp_tnl_segmentation": "on",
-            "tx_vlan_offload": "on",
-            "tx_vlan_stag_hw_insert": "on",
-            "vlan_challenged": "off [fixed]"
-        },
-        "hw_timestamp_filters": [],
-        "ipv6": [
-            {
-                "address": "fe80::d066:aeff:fe4b:91db",
-                "prefix": "64",
-                "scope": "link"
-            }
-        ],
-        "macaddress": "d2:66:ae:4b:91:db",
-        "mtu": 1500,
-        "promisc": true,
-        "speed": 10000,
-        "timestamping": [
-            "tx_software",
-            "rx_software",
-            "software"
-        ],
-        "type": "ether"
-    },
-    "ansible_veth2acd132": {
-        "active": true,
-        "device": "veth2acd132",
-        "features": {
-            "esp_hw_offload": "off [fixed]",
-            "esp_tx_csum_hw_offload": "off [fixed]",
-            "fcoe_mtu": "off [fixed]",
-            "generic_receive_offload": "on",
-            "generic_segmentation_offload": "on",
-            "highdma": "on",
-            "hw_tc_offload": "off [fixed]",
-            "l2_fwd_offload": "off [fixed]",
-            "large_receive_offload": "off [fixed]",
-            "loopback": "off [fixed]",
-            "netns_local": "off [fixed]",
-            "ntuple_filters": "off [fixed]",
-            "receive_hashing": "off [fixed]",
-            "rx_all": "off [fixed]",
-            "rx_checksumming": "on",
-            "rx_fcs": "off [fixed]",
-            "rx_gro_hw": "off [fixed]",
-            "rx_udp_tunnel_port_offload": "off [fixed]",
-            "rx_vlan_filter": "off [fixed]",
-            "rx_vlan_offload": "on",
-            "rx_vlan_stag_filter": "off [fixed]",
-            "rx_vlan_stag_hw_parse": "on",
-            "scatter_gather": "on",
-            "tcp_segmentation_offload": "on",
-            "tls_hw_record": "off [fixed]",
-            "tls_hw_rx_offload": "off [fixed]",
-            "tls_hw_tx_offload": "off [fixed]",
-            "tx_checksum_fcoe_crc": "off [fixed]",
-            "tx_checksum_ip_generic": "on",
-            "tx_checksum_ipv4": "off [fixed]",
-            "tx_checksum_ipv6": "off [fixed]",
-            "tx_checksum_sctp": "on",
-            "tx_checksumming": "on",
-            "tx_esp_segmentation": "off [fixed]",
-            "tx_fcoe_segmentation": "off [fixed]",
-            "tx_gre_csum_segmentation": "on",
-            "tx_gre_segmentation": "on",
-            "tx_gso_partial": "off [fixed]",
-            "tx_gso_robust": "off [fixed]",
-            "tx_ipxip4_segmentation": "on",
-            "tx_ipxip6_segmentation": "on",
-            "tx_lockless": "on [fixed]",
-            "tx_nocache_copy": "off",
-            "tx_scatter_gather": "on",
-            "tx_scatter_gather_fraglist": "on",
-            "tx_sctp_segmentation": "on",
-            "tx_tcp6_segmentation": "on",
-            "tx_tcp_ecn_segmentation": "on",
-            "tx_tcp_mangleid_segmentation": "on",
-            "tx_tcp_segmentation": "on",
-            "tx_udp_segmentation": "off [fixed]",
-            "tx_udp_tnl_csum_segmentation": "on",
-            "tx_udp_tnl_segmentation": "on",
-            "tx_vlan_offload": "on",
-            "tx_vlan_stag_hw_insert": "on",
-            "vlan_challenged": "off [fixed]"
-        },
-        "hw_timestamp_filters": [],
-        "ipv6": [
-            {
-                "address": "fe80::e0fd:eeff:fe16:f4bd",
-                "prefix": "64",
-                "scope": "link"
-            }
-        ],
-        "macaddress": "e2:fd:ee:16:f4:bd",
-        "mtu": 1500,
-        "promisc": true,
-        "speed": 10000,
-        "timestamping": [
-            "tx_software",
-            "rx_software",
-            "software"
-        ],
-        "type": "ether"
-    },
-    "ansible_veth44ca4af": {
-        "active": true,
-        "device": "veth44ca4af",
-        "features": {
-            "esp_hw_offload": "off [fixed]",
-            "esp_tx_csum_hw_offload": "off [fixed]",
-            "fcoe_mtu": "off [fixed]",
-            "generic_receive_offload": "on",
-            "generic_segmentation_offload": "on",
-            "highdma": "on",
-            "hw_tc_offload": "off [fixed]",
-            "l2_fwd_offload": "off [fixed]",
-            "large_receive_offload": "off [fixed]",
-            "loopback": "off [fixed]",
-            "netns_local": "off [fixed]",
-            "ntuple_filters": "off [fixed]",
-            "receive_hashing": "off [fixed]",
-            "rx_all": "off [fixed]",
-            "rx_checksumming": "on",
-            "rx_fcs": "off [fixed]",
-            "rx_gro_hw": "off [fixed]",
-            "rx_udp_tunnel_port_offload": "off [fixed]",
-            "rx_vlan_filter": "off [fixed]",
-            "rx_vlan_offload": "on",
-            "rx_vlan_stag_filter": "off [fixed]",
-            "rx_vlan_stag_hw_parse": "on",
-            "scatter_gather": "on",
-            "tcp_segmentation_offload": "on",
-            "tls_hw_record": "off [fixed]",
-            "tls_hw_rx_offload": "off [fixed]",
-            "tls_hw_tx_offload": "off [fixed]",
-            "tx_checksum_fcoe_crc": "off [fixed]",
-            "tx_checksum_ip_generic": "on",
-            "tx_checksum_ipv4": "off [fixed]",
-            "tx_checksum_ipv6": "off [fixed]",
-            "tx_checksum_sctp": "on",
-            "tx_checksumming": "on",
-            "tx_esp_segmentation": "off [fixed]",
-            "tx_fcoe_segmentation": "off [fixed]",
-            "tx_gre_csum_segmentation": "on",
-            "tx_gre_segmentation": "on",
-            "tx_gso_partial": "off [fixed]",
-            "tx_gso_robust": "off [fixed]",
-            "tx_ipxip4_segmentation": "on",
-            "tx_ipxip6_segmentation": "on",
-            "tx_lockless": "on [fixed]",
-            "tx_nocache_copy": "off",
-            "tx_scatter_gather": "on",
-            "tx_scatter_gather_fraglist": "on",
-            "tx_sctp_segmentation": "on",
-            "tx_tcp6_segmentation": "on",
-            "tx_tcp_ecn_segmentation": "on",
-            "tx_tcp_mangleid_segmentation": "on",
-            "tx_tcp_segmentation": "on",
-            "tx_udp_segmentation": "off [fixed]",
-            "tx_udp_tnl_csum_segmentation": "on",
-            "tx_udp_tnl_segmentation": "on",
-            "tx_vlan_offload": "on",
-            "tx_vlan_stag_hw_insert": "on",
-            "vlan_challenged": "off [fixed]"
-        },
-        "hw_timestamp_filters": [],
-        "ipv6": [
-            {
-                "address": "fe80::7826:d1ff:fe66:b0e",
-                "prefix": "64",
-                "scope": "link"
-            }
-        ],
-        "macaddress": "7a:26:d1:66:0b:0e",
-        "mtu": 1500,
-        "promisc": true,
-        "speed": 10000,
-        "timestamping": [
-            "tx_software",
-            "rx_software",
-            "software"
-        ],
-        "type": "ether"
-    },
-    "ansible_veth46f740b": {
-        "active": true,
-        "device": "veth46f740b",
-        "features": {
-            "esp_hw_offload": "off [fixed]",
-            "esp_tx_csum_hw_offload": "off [fixed]",
-            "fcoe_mtu": "off [fixed]",
-            "generic_receive_offload": "on",
-            "generic_segmentation_offload": "on",
-            "highdma": "on",
-            "hw_tc_offload": "off [fixed]",
-            "l2_fwd_offload": "off [fixed]",
-            "large_receive_offload": "off [fixed]",
-            "loopback": "off [fixed]",
-            "netns_local": "off [fixed]",
-            "ntuple_filters": "off [fixed]",
-            "receive_hashing": "off [fixed]",
-            "rx_all": "off [fixed]",
-            "rx_checksumming": "on",
-            "rx_fcs": "off [fixed]",
-            "rx_gro_hw": "off [fixed]",
-            "rx_udp_tunnel_port_offload": "off [fixed]",
-            "rx_vlan_filter": "off [fixed]",
-            "rx_vlan_offload": "on",
-            "rx_vlan_stag_filter": "off [fixed]",
-            "rx_vlan_stag_hw_parse": "on",
-            "scatter_gather": "on",
-            "tcp_segmentation_offload": "on",
-            "tls_hw_record": "off [fixed]",
-            "tls_hw_rx_offload": "off [fixed]",
-            "tls_hw_tx_offload": "off [fixed]",
-            "tx_checksum_fcoe_crc": "off [fixed]",
-            "tx_checksum_ip_generic": "on",
-            "tx_checksum_ipv4": "off [fixed]",
-            "tx_checksum_ipv6": "off [fixed]",
-            "tx_checksum_sctp": "on",
-            "tx_checksumming": "on",
-            "tx_esp_segmentation": "off [fixed]",
-            "tx_fcoe_segmentation": "off [fixed]",
-            "tx_gre_csum_segmentation": "on",
-            "tx_gre_segmentation": "on",
-            "tx_gso_partial": "off [fixed]",
-            "tx_gso_robust": "off [fixed]",
-            "tx_ipxip4_segmentation": "on",
-            "tx_ipxip6_segmentation": "on",
-            "tx_lockless": "on [fixed]",
-            "tx_nocache_copy": "off",
-            "tx_scatter_gather": "on",
-            "tx_scatter_gather_fraglist": "on",
-            "tx_sctp_segmentation": "on",
-            "tx_tcp6_segmentation": "on",
-            "tx_tcp_ecn_segmentation": "on",
-            "tx_tcp_mangleid_segmentation": "on",
-            "tx_tcp_segmentation": "on",
-            "tx_udp_segmentation": "off [fixed]",
-            "tx_udp_tnl_csum_segmentation": "on",
-            "tx_udp_tnl_segmentation": "on",
-            "tx_vlan_offload": "on",
-            "tx_vlan_stag_hw_insert": "on",
-            "vlan_challenged": "off [fixed]"
-        },
-        "hw_timestamp_filters": [],
-        "ipv6": [
-            {
-                "address": "fe80::38d4:3ff:fe83:b21c",
-                "prefix": "64",
-                "scope": "link"
-            }
-        ],
-        "macaddress": "3a:d4:03:83:b2:1c",
-        "mtu": 1500,
-        "promisc": true,
-        "speed": 10000,
-        "timestamping": [
-            "tx_software",
-            "rx_software",
-            "software"
-        ],
-        "type": "ether"
-    },
-    "ansible_veth54816e8": {
-        "active": true,
-        "device": "veth54816e8",
-        "features": {
-            "esp_hw_offload": "off [fixed]",
-            "esp_tx_csum_hw_offload": "off [fixed]",
-            "fcoe_mtu": "off [fixed]",
-            "generic_receive_offload": "on",
-            "generic_segmentation_offload": "on",
-            "highdma": "on",
-            "hw_tc_offload": "off [fixed]",
-            "l2_fwd_offload": "off [fixed]",
-            "large_receive_offload": "off [fixed]",
-            "loopback": "off [fixed]",
-            "netns_local": "off [fixed]",
-            "ntuple_filters": "off [fixed]",
-            "receive_hashing": "off [fixed]",
-            "rx_all": "off [fixed]",
-            "rx_checksumming": "on",
-            "rx_fcs": "off [fixed]",
-            "rx_gro_hw": "off [fixed]",
-            "rx_udp_tunnel_port_offload": "off [fixed]",
-            "rx_vlan_filter": "off [fixed]",
-            "rx_vlan_offload": "on",
-            "rx_vlan_stag_filter": "off [fixed]",
-            "rx_vlan_stag_hw_parse": "on",
-            "scatter_gather": "on",
-            "tcp_segmentation_offload": "on",
-            "tls_hw_record": "off [fixed]",
-            "tls_hw_rx_offload": "off [fixed]",
-            "tls_hw_tx_offload": "off [fixed]",
-            "tx_checksum_fcoe_crc": "off [fixed]",
-            "tx_checksum_ip_generic": "on",
-            "tx_checksum_ipv4": "off [fixed]",
-            "tx_checksum_ipv6": "off [fixed]",
-            "tx_checksum_sctp": "on",
-            "tx_checksumming": "on",
-            "tx_esp_segmentation": "off [fixed]",
-            "tx_fcoe_segmentation": "off [fixed]",
-            "tx_gre_csum_segmentation": "on",
-            "tx_gre_segmentation": "on",
-            "tx_gso_partial": "off [fixed]",
-            "tx_gso_robust": "off [fixed]",
-            "tx_ipxip4_segmentation": "on",
-            "tx_ipxip6_segmentation": "on",
-            "tx_lockless": "on [fixed]",
-            "tx_nocache_copy": "off",
-            "tx_scatter_gather": "on",
-            "tx_scatter_gather_fraglist": "on",
-            "tx_sctp_segmentation": "on",
-            "tx_tcp6_segmentation": "on",
-            "tx_tcp_ecn_segmentation": "on",
-            "tx_tcp_mangleid_segmentation": "on",
-            "tx_tcp_segmentation": "on",
-            "tx_udp_segmentation": "off [fixed]",
-            "tx_udp_tnl_csum_segmentation": "on",
-            "tx_udp_tnl_segmentation": "on",
-            "tx_vlan_offload": "on",
-            "tx_vlan_stag_hw_insert": "on",
-            "vlan_challenged": "off [fixed]"
-        },
-        "hw_timestamp_filters": [],
-        "ipv6": [
-            {
-                "address": "fe80::5898:cff:feda:c7a7",
-                "prefix": "64",
-                "scope": "link"
-            }
-        ],
-        "macaddress": "5a:98:0c:da:c7:a7",
-        "mtu": 1500,
-        "promisc": true,
-        "speed": 10000,
-        "timestamping": [
-            "tx_software",
-            "rx_software",
-            "software"
-        ],
-        "type": "ether"
-    },
-    "ansible_veth670c22a": {
-        "active": true,
-        "device": "veth670c22a",
-        "features": {
-            "esp_hw_offload": "off [fixed]",
-            "esp_tx_csum_hw_offload": "off [fixed]",
-            "fcoe_mtu": "off [fixed]",
-            "generic_receive_offload": "on",
-            "generic_segmentation_offload": "on",
-            "highdma": "on",
-            "hw_tc_offload": "off [fixed]",
-            "l2_fwd_offload": "off [fixed]",
-            "large_receive_offload": "off [fixed]",
-            "loopback": "off [fixed]",
-            "netns_local": "off [fixed]",
-            "ntuple_filters": "off [fixed]",
-            "receive_hashing": "off [fixed]",
-            "rx_all": "off [fixed]",
-            "rx_checksumming": "on",
-            "rx_fcs": "off [fixed]",
-            "rx_gro_hw": "off [fixed]",
-            "rx_udp_tunnel_port_offload": "off [fixed]",
-            "rx_vlan_filter": "off [fixed]",
-            "rx_vlan_offload": "on",
-            "rx_vlan_stag_filter": "off [fixed]",
-            "rx_vlan_stag_hw_parse": "on",
-            "scatter_gather": "on",
-            "tcp_segmentation_offload": "on",
-            "tls_hw_record": "off [fixed]",
-            "tls_hw_rx_offload": "off [fixed]",
-            "tls_hw_tx_offload": "off [fixed]",
-            "tx_checksum_fcoe_crc": "off [fixed]",
-            "tx_checksum_ip_generic": "on",
-            "tx_checksum_ipv4": "off [fixed]",
-            "tx_checksum_ipv6": "off [fixed]",
-            "tx_checksum_sctp": "on",
-            "tx_checksumming": "on",
-            "tx_esp_segmentation": "off [fixed]",
-            "tx_fcoe_segmentation": "off [fixed]",
-            "tx_gre_csum_segmentation": "on",
-            "tx_gre_segmentation": "on",
-            "tx_gso_partial": "off [fixed]",
-            "tx_gso_robust": "off [fixed]",
-            "tx_ipxip4_segmentation": "on",
-            "tx_ipxip6_segmentation": "on",
-            "tx_lockless": "on [fixed]",
-            "tx_nocache_copy": "off",
-            "tx_scatter_gather": "on",
-            "tx_scatter_gather_fraglist": "on",
-            "tx_sctp_segmentation": "on",
-            "tx_tcp6_segmentation": "on",
-            "tx_tcp_ecn_segmentation": "on",
-            "tx_tcp_mangleid_segmentation": "on",
-            "tx_tcp_segmentation": "on",
-            "tx_udp_segmentation": "off [fixed]",
-            "tx_udp_tnl_csum_segmentation": "on",
-            "tx_udp_tnl_segmentation": "on",
-            "tx_vlan_offload": "on",
-            "tx_vlan_stag_hw_insert": "on",
-            "vlan_challenged": "off [fixed]"
-        },
-        "hw_timestamp_filters": [],
-        "ipv6": [
-            {
-                "address": "fe80::18f6:77ff:fede:ac0e",
-                "prefix": "64",
-                "scope": "link"
-            }
-        ],
-        "macaddress": "1a:f6:77:de:ac:0e",
-        "mtu": 1500,
-        "promisc": true,
-        "speed": 10000,
-        "timestamping": [
-            "tx_software",
-            "rx_software",
-            "software"
-        ],
-        "type": "ether"
-    },
-    "ansible_veth77e9b6c": {
-        "active": true,
-        "device": "veth77e9b6c",
-        "features": {
-            "esp_hw_offload": "off [fixed]",
-            "esp_tx_csum_hw_offload": "off [fixed]",
-            "fcoe_mtu": "off [fixed]",
-            "generic_receive_offload": "on",
-            "generic_segmentation_offload": "on",
-            "highdma": "on",
-            "hw_tc_offload": "off [fixed]",
-            "l2_fwd_offload": "off [fixed]",
-            "large_receive_offload": "off [fixed]",
-            "loopback": "off [fixed]",
-            "netns_local": "off [fixed]",
-            "ntuple_filters": "off [fixed]",
-            "receive_hashing": "off [fixed]",
-            "rx_all": "off [fixed]",
-            "rx_checksumming": "on",
-            "rx_fcs": "off [fixed]",
-            "rx_gro_hw": "off [fixed]",
-            "rx_udp_tunnel_port_offload": "off [fixed]",
-            "rx_vlan_filter": "off [fixed]",
-            "rx_vlan_offload": "on",
-            "rx_vlan_stag_filter": "off [fixed]",
-            "rx_vlan_stag_hw_parse": "on",
-            "scatter_gather": "on",
-            "tcp_segmentation_offload": "on",
-            "tls_hw_record": "off [fixed]",
-            "tls_hw_rx_offload": "off [fixed]",
-            "tls_hw_tx_offload": "off [fixed]",
-            "tx_checksum_fcoe_crc": "off [fixed]",
-            "tx_checksum_ip_generic": "on",
-            "tx_checksum_ipv4": "off [fixed]",
-            "tx_checksum_ipv6": "off [fixed]",
-            "tx_checksum_sctp": "on",
-            "tx_checksumming": "on",
-            "tx_esp_segmentation": "off [fixed]",
-            "tx_fcoe_segmentation": "off [fixed]",
-            "tx_gre_csum_segmentation": "on",
-            "tx_gre_segmentation": "on",
-            "tx_gso_partial": "off [fixed]",
-            "tx_gso_robust": "off [fixed]",
-            "tx_ipxip4_segmentation": "on",
-            "tx_ipxip6_segmentation": "on",
-            "tx_lockless": "on [fixed]",
-            "tx_nocache_copy": "off",
-            "tx_scatter_gather": "on",
-            "tx_scatter_gather_fraglist": "on",
-            "tx_sctp_segmentation": "on",
-            "tx_tcp6_segmentation": "on",
-            "tx_tcp_ecn_segmentation": "on",
-            "tx_tcp_mangleid_segmentation": "on",
-            "tx_tcp_segmentation": "on",
-            "tx_udp_segmentation": "off [fixed]",
-            "tx_udp_tnl_csum_segmentation": "on",
-            "tx_udp_tnl_segmentation": "on",
-            "tx_vlan_offload": "on",
-            "tx_vlan_stag_hw_insert": "on",
-            "vlan_challenged": "off [fixed]"
-        },
-        "hw_timestamp_filters": [],
-        "ipv6": [
-            {
-                "address": "fe80::38b2:d3ff:fe09:6e09",
-                "prefix": "64",
-                "scope": "link"
-            }
-        ],
-        "macaddress": "3a:b2:d3:09:6e:09",
-        "mtu": 1500,
-        "promisc": true,
-        "speed": 10000,
-        "timestamping": [
-            "tx_software",
-            "rx_software",
-            "software"
-        ],
-        "type": "ether"
-    },
-    "ansible_veth7fd09ac": {
-        "active": true,
-        "device": "veth7fd09ac",
-        "features": {
-            "esp_hw_offload": "off [fixed]",
-            "esp_tx_csum_hw_offload": "off [fixed]",
-            "fcoe_mtu": "off [fixed]",
-            "generic_receive_offload": "on",
-            "generic_segmentation_offload": "on",
-            "highdma": "on",
-            "hw_tc_offload": "off [fixed]",
-            "l2_fwd_offload": "off [fixed]",
-            "large_receive_offload": "off [fixed]",
-            "loopback": "off [fixed]",
-            "netns_local": "off [fixed]",
-            "ntuple_filters": "off [fixed]",
-            "receive_hashing": "off [fixed]",
-            "rx_all": "off [fixed]",
-            "rx_checksumming": "on",
-            "rx_fcs": "off [fixed]",
-            "rx_gro_hw": "off [fixed]",
-            "rx_udp_tunnel_port_offload": "off [fixed]",
-            "rx_vlan_filter": "off [fixed]",
-            "rx_vlan_offload": "on",
-            "rx_vlan_stag_filter": "off [fixed]",
-            "rx_vlan_stag_hw_parse": "on",
-            "scatter_gather": "on",
-            "tcp_segmentation_offload": "on",
-            "tls_hw_record": "off [fixed]",
-            "tls_hw_rx_offload": "off [fixed]",
-            "tls_hw_tx_offload": "off [fixed]",
-            "tx_checksum_fcoe_crc": "off [fixed]",
-            "tx_checksum_ip_generic": "on",
-            "tx_checksum_ipv4": "off [fixed]",
-            "tx_checksum_ipv6": "off [fixed]",
-            "tx_checksum_sctp": "on",
-            "tx_checksumming": "on",
-            "tx_esp_segmentation": "off [fixed]",
-            "tx_fcoe_segmentation": "off [fixed]",
-            "tx_gre_csum_segmentation": "on",
-            "tx_gre_segmentation": "on",
-            "tx_gso_partial": "off [fixed]",
-            "tx_gso_robust": "off [fixed]",
-            "tx_ipxip4_segmentation": "on",
-            "tx_ipxip6_segmentation": "on",
-            "tx_lockless": "on [fixed]",
-            "tx_nocache_copy": "off",
-            "tx_scatter_gather": "on",
-            "tx_scatter_gather_fraglist": "on",
-            "tx_sctp_segmentation": "on",
-            "tx_tcp6_segmentation": "on",
-            "tx_tcp_ecn_segmentation": "on",
-            "tx_tcp_mangleid_segmentation": "on",
-            "tx_tcp_segmentation": "on",
-            "tx_udp_segmentation": "off [fixed]",
-            "tx_udp_tnl_csum_segmentation": "on",
-            "tx_udp_tnl_segmentation": "on",
-            "tx_vlan_offload": "on",
-            "tx_vlan_stag_hw_insert": "on",
-            "vlan_challenged": "off [fixed]"
-        },
-        "hw_timestamp_filters": [],
-        "ipv6": [
-            {
-                "address": "fe80::d08a:7eff:fedb:726",
-                "prefix": "64",
-                "scope": "link"
-            }
-        ],
-        "macaddress": "d2:8a:7e:db:07:26",
-        "mtu": 1500,
-        "promisc": true,
-        "speed": 10000,
-        "timestamping": [
-            "tx_software",
-            "rx_software",
-            "software"
-        ],
-        "type": "ether"
-    },
-    "ansible_veth83bbd25": {
-        "active": true,
-        "device": "veth83bbd25",
-        "features": {
-            "esp_hw_offload": "off [fixed]",
-            "esp_tx_csum_hw_offload": "off [fixed]",
-            "fcoe_mtu": "off [fixed]",
-            "generic_receive_offload": "on",
-            "generic_segmentation_offload": "on",
-            "highdma": "on",
-            "hw_tc_offload": "off [fixed]",
-            "l2_fwd_offload": "off [fixed]",
-            "large_receive_offload": "off [fixed]",
-            "loopback": "off [fixed]",
-            "netns_local": "off [fixed]",
-            "ntuple_filters": "off [fixed]",
-            "receive_hashing": "off [fixed]",
-            "rx_all": "off [fixed]",
-            "rx_checksumming": "on",
-            "rx_fcs": "off [fixed]",
-            "rx_gro_hw": "off [fixed]",
-            "rx_udp_tunnel_port_offload": "off [fixed]",
-            "rx_vlan_filter": "off [fixed]",
-            "rx_vlan_offload": "on",
-            "rx_vlan_stag_filter": "off [fixed]",
-            "rx_vlan_stag_hw_parse": "on",
-            "scatter_gather": "on",
-            "tcp_segmentation_offload": "on",
-            "tls_hw_record": "off [fixed]",
-            "tls_hw_rx_offload": "off [fixed]",
-            "tls_hw_tx_offload": "off [fixed]",
-            "tx_checksum_fcoe_crc": "off [fixed]",
-            "tx_checksum_ip_generic": "on",
-            "tx_checksum_ipv4": "off [fixed]",
-            "tx_checksum_ipv6": "off [fixed]",
-            "tx_checksum_sctp": "on",
-            "tx_checksumming": "on",
-            "tx_esp_segmentation": "off [fixed]",
-            "tx_fcoe_segmentation": "off [fixed]",
-            "tx_gre_csum_segmentation": "on",
-            "tx_gre_segmentation": "on",
-            "tx_gso_partial": "off [fixed]",
-            "tx_gso_robust": "off [fixed]",
-            "tx_ipxip4_segmentation": "on",
-            "tx_ipxip6_segmentation": "on",
-            "tx_lockless": "on [fixed]",
-            "tx_nocache_copy": "off",
-            "tx_scatter_gather": "on",
-            "tx_scatter_gather_fraglist": "on",
-            "tx_sctp_segmentation": "on",
-            "tx_tcp6_segmentation": "on",
-            "tx_tcp_ecn_segmentation": "on",
-            "tx_tcp_mangleid_segmentation": "on",
-            "tx_tcp_segmentation": "on",
-            "tx_udp_segmentation": "off [fixed]",
-            "tx_udp_tnl_csum_segmentation": "on",
-            "tx_udp_tnl_segmentation": "on",
-            "tx_vlan_offload": "on",
-            "tx_vlan_stag_hw_insert": "on",
-            "vlan_challenged": "off [fixed]"
-        },
-        "hw_timestamp_filters": [],
-        "ipv6": [
-            {
-                "address": "fe80::f047:b7ff:fe23:b153",
-                "prefix": "64",
-                "scope": "link"
-            }
-        ],
-        "macaddress": "f2:47:b7:23:b1:53",
-        "mtu": 1500,
-        "promisc": true,
-        "speed": 10000,
-        "timestamping": [
-            "tx_software",
-            "rx_software",
-            "software"
-        ],
-        "type": "ether"
-    },
-    "ansible_veth9109100": {
-        "active": true,
-        "device": "veth9109100",
-        "features": {
-            "esp_hw_offload": "off [fixed]",
-            "esp_tx_csum_hw_offload": "off [fixed]",
-            "fcoe_mtu": "off [fixed]",
-            "generic_receive_offload": "on",
-            "generic_segmentation_offload": "on",
-            "highdma": "on",
-            "hw_tc_offload": "off [fixed]",
-            "l2_fwd_offload": "off [fixed]",
-            "large_receive_offload": "off [fixed]",
-            "loopback": "off [fixed]",
-            "netns_local": "off [fixed]",
-            "ntuple_filters": "off [fixed]",
-            "receive_hashing": "off [fixed]",
-            "rx_all": "off [fixed]",
-            "rx_checksumming": "on",
-            "rx_fcs": "off [fixed]",
-            "rx_gro_hw": "off [fixed]",
-            "rx_udp_tunnel_port_offload": "off [fixed]",
-            "rx_vlan_filter": "off [fixed]",
-            "rx_vlan_offload": "on",
-            "rx_vlan_stag_filter": "off [fixed]",
-            "rx_vlan_stag_hw_parse": "on",
-            "scatter_gather": "on",
-            "tcp_segmentation_offload": "on",
-            "tls_hw_record": "off [fixed]",
-            "tls_hw_rx_offload": "off [fixed]",
-            "tls_hw_tx_offload": "off [fixed]",
-            "tx_checksum_fcoe_crc": "off [fixed]",
-            "tx_checksum_ip_generic": "on",
-            "tx_checksum_ipv4": "off [fixed]",
-            "tx_checksum_ipv6": "off [fixed]",
-            "tx_checksum_sctp": "on",
-            "tx_checksumming": "on",
-            "tx_esp_segmentation": "off [fixed]",
-            "tx_fcoe_segmentation": "off [fixed]",
-            "tx_gre_csum_segmentation": "on",
-            "tx_gre_segmentation": "on",
-            "tx_gso_partial": "off [fixed]",
-            "tx_gso_robust": "off [fixed]",
-            "tx_ipxip4_segmentation": "on",
-            "tx_ipxip6_segmentation": "on",
-            "tx_lockless": "on [fixed]",
-            "tx_nocache_copy": "off",
-            "tx_scatter_gather": "on",
-            "tx_scatter_gather_fraglist": "on",
-            "tx_sctp_segmentation": "on",
-            "tx_tcp6_segmentation": "on",
-            "tx_tcp_ecn_segmentation": "on",
-            "tx_tcp_mangleid_segmentation": "on",
-            "tx_tcp_segmentation": "on",
-            "tx_udp_segmentation": "off [fixed]",
-            "tx_udp_tnl_csum_segmentation": "on",
-            "tx_udp_tnl_segmentation": "on",
-            "tx_vlan_offload": "on",
-            "tx_vlan_stag_hw_insert": "on",
-            "vlan_challenged": "off [fixed]"
-        },
-        "hw_timestamp_filters": [],
-        "ipv6": [
-            {
-                "address": "fe80::1c7e:43ff:fe78:ede2",
-                "prefix": "64",
-                "scope": "link"
-            }
-        ],
-        "macaddress": "1e:7e:43:78:ed:e2",
-        "mtu": 1500,
-        "promisc": true,
-        "speed": 10000,
-        "timestamping": [
-            "tx_software",
-            "rx_software",
-            "software"
-        ],
-        "type": "ether"
-    },
-    "ansible_vethaf631af": {
-        "active": true,
-        "device": "vethaf631af",
-        "features": {
-            "esp_hw_offload": "off [fixed]",
-            "esp_tx_csum_hw_offload": "off [fixed]",
-            "fcoe_mtu": "off [fixed]",
-            "generic_receive_offload": "on",
-            "generic_segmentation_offload": "on",
-            "highdma": "on",
-            "hw_tc_offload": "off [fixed]",
-            "l2_fwd_offload": "off [fixed]",
-            "large_receive_offload": "off [fixed]",
-            "loopback": "off [fixed]",
-            "netns_local": "off [fixed]",
-            "ntuple_filters": "off [fixed]",
-            "receive_hashing": "off [fixed]",
-            "rx_all": "off [fixed]",
-            "rx_checksumming": "on",
-            "rx_fcs": "off [fixed]",
-            "rx_gro_hw": "off [fixed]",
-            "rx_udp_tunnel_port_offload": "off [fixed]",
-            "rx_vlan_filter": "off [fixed]",
-            "rx_vlan_offload": "on",
-            "rx_vlan_stag_filter": "off [fixed]",
-            "rx_vlan_stag_hw_parse": "on",
-            "scatter_gather": "on",
-            "tcp_segmentation_offload": "on",
-            "tls_hw_record": "off [fixed]",
-            "tls_hw_rx_offload": "off [fixed]",
-            "tls_hw_tx_offload": "off [fixed]",
-            "tx_checksum_fcoe_crc": "off [fixed]",
-            "tx_checksum_ip_generic": "on",
-            "tx_checksum_ipv4": "off [fixed]",
-            "tx_checksum_ipv6": "off [fixed]",
-            "tx_checksum_sctp": "on",
-            "tx_checksumming": "on",
-            "tx_esp_segmentation": "off [fixed]",
-            "tx_fcoe_segmentation": "off [fixed]",
-            "tx_gre_csum_segmentation": "on",
-            "tx_gre_segmentation": "on",
-            "tx_gso_partial": "off [fixed]",
-            "tx_gso_robust": "off [fixed]",
-            "tx_ipxip4_segmentation": "on",
-            "tx_ipxip6_segmentation": "on",
-            "tx_lockless": "on [fixed]",
-            "tx_nocache_copy": "off",
-            "tx_scatter_gather": "on",
-            "tx_scatter_gather_fraglist": "on",
-            "tx_sctp_segmentation": "on",
-            "tx_tcp6_segmentation": "on",
-            "tx_tcp_ecn_segmentation": "on",
-            "tx_tcp_mangleid_segmentation": "on",
-            "tx_tcp_segmentation": "on",
-            "tx_udp_segmentation": "off [fixed]",
-            "tx_udp_tnl_csum_segmentation": "on",
-            "tx_udp_tnl_segmentation": "on",
-            "tx_vlan_offload": "on",
-            "tx_vlan_stag_hw_insert": "on",
-            "vlan_challenged": "off [fixed]"
-        },
-        "hw_timestamp_filters": [],
-        "ipv6": [
-            {
-                "address": "fe80::e40b:48ff:fefb:185a",
-                "prefix": "64",
-                "scope": "link"
-            }
-        ],
-        "macaddress": "e6:0b:48:fb:18:5a",
-        "mtu": 1500,
-        "promisc": true,
-        "speed": 10000,
-        "timestamping": [
-            "tx_software",
-            "rx_software",
-            "software"
-        ],
-        "type": "ether"
-    },
     "ansible_virtualization_role": "guest",
     "ansible_virtualization_type": "virtualbox",
     "gather_subset": [
@@ -2206,21 +1203,21 @@
             "physical_block_size": "512",
             "removable": "0",
             "rotational": "1",
-            "size": "113656"
+            "size": "113680"
         },
         "loop1": {
             "logical_block_size": "512",
             "physical_block_size": "512",
             "removable": "0",
             "rotational": "1",
-            "size": "113680"
+            "size": "126784"
         },
         "loop2": {
             "logical_block_size": "512",
             "physical_block_size": "512",
             "removable": "0",
             "rotational": "1",
-            "size": "126784"
+            "size": "113656"
         },
         "loop3": {
             "logical_block_size": "512",
@@ -2234,7 +1231,7 @@
             "physical_block_size": "512",
             "removable": "0",
             "rotational": "1",
-            "size": "75192"
+            "size": "88952"
         },
         "loop5": {
             "logical_block_size": "512",
@@ -2248,14 +1245,14 @@
             "physical_block_size": "512",
             "removable": "0",
             "rotational": "1",
-            "size": "66440"
+            "size": "75192"
         },
         "loop7": {
             "logical_block_size": "512",
             "physical_block_size": "512",
             "removable": "0",
             "rotational": "1",
-            "size": "88952"
+            "size": "66440"
         },
         "loop8": {
             "logical_block_size": "512",
@@ -2325,29 +1322,29 @@
                         "packets": "0"
                     },
                     "tx": {
-                        "bytes": "526",
+                        "bytes": "0",
                         "carrier": "0",
                         "collisions": "0",
                         "drop": "0",
                         "errors": "0",
-                        "packets": "5"
+                        "packets": "0"
                     }
                 },
                 "enp0s3": {
                     "rx": {
-                        "bytes": "468665",
+                        "bytes": "461716",
                         "drop": "0",
                         "errors": "0",
                         "overrun": "0",
-                        "packets": "5182"
+                        "packets": "2277"
                     },
                     "tx": {
-                        "bytes": "439366",
+                        "bytes": "196442",
                         "carrier": "0",
                         "collisions": "0",
                         "drop": "0",
                         "errors": "0",
-                        "packets": "3496",
+                        "packets": "1564",
                         "queuelen": "1000"
                     }
                 },
@@ -2360,235 +1357,31 @@
                         "packets": "0"
                     },
                     "tx": {
-                        "bytes": "17267",
+                        "bytes": "7180",
                         "carrier": "0",
                         "collisions": "0",
                         "drop": "0",
                         "errors": "0",
-                        "packets": "62",
+                        "packets": "31",
                         "queuelen": "1000"
                     }
                 },
                 "lo": {
                     "rx": {
-                        "bytes": "6712",
+                        "bytes": "10876",
                         "drop": "0",
                         "errors": "0",
                         "overrun": "0",
-                        "packets": "88"
+                        "packets": "128"
                     },
                     "tx": {
-                        "bytes": "6712",
+                        "bytes": "10876",
                         "carrier": "0",
                         "collisions": "0",
                         "drop": "0",
                         "errors": "0",
-                        "packets": "88",
+                        "packets": "128",
                         "queuelen": "1000"
-                    }
-                },
-                "veth097c9ce": {
-                    "rx": {
-                        "bytes": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "overrun": "0",
-                        "packets": "0"
-                    },
-                    "tx": {
-                        "bytes": "1076",
-                        "carrier": "0",
-                        "collisions": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "packets": "14"
-                    }
-                },
-                "veth1b40ebc": {
-                    "rx": {
-                        "bytes": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "overrun": "0",
-                        "packets": "0"
-                    },
-                    "tx": {
-                        "bytes": "1076",
-                        "carrier": "0",
-                        "collisions": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "packets": "14"
-                    }
-                },
-                "veth2acd132": {
-                    "rx": {
-                        "bytes": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "overrun": "0",
-                        "packets": "0"
-                    },
-                    "tx": {
-                        "bytes": "1076",
-                        "carrier": "0",
-                        "collisions": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "packets": "14"
-                    }
-                },
-                "veth44ca4af": {
-                    "rx": {
-                        "bytes": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "overrun": "0",
-                        "packets": "0"
-                    },
-                    "tx": {
-                        "bytes": "1076",
-                        "carrier": "0",
-                        "collisions": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "packets": "14"
-                    }
-                },
-                "veth46f740b": {
-                    "rx": {
-                        "bytes": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "overrun": "0",
-                        "packets": "0"
-                    },
-                    "tx": {
-                        "bytes": "1076",
-                        "carrier": "0",
-                        "collisions": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "packets": "14"
-                    }
-                },
-                "veth54816e8": {
-                    "rx": {
-                        "bytes": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "overrun": "0",
-                        "packets": "0"
-                    },
-                    "tx": {
-                        "bytes": "1602",
-                        "carrier": "0",
-                        "collisions": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "packets": "19"
-                    }
-                },
-                "veth670c22a": {
-                    "rx": {
-                        "bytes": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "overrun": "0",
-                        "packets": "0"
-                    },
-                    "tx": {
-                        "bytes": "1076",
-                        "carrier": "0",
-                        "collisions": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "packets": "14"
-                    }
-                },
-                "veth77e9b6c": {
-                    "rx": {
-                        "bytes": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "overrun": "0",
-                        "packets": "0"
-                    },
-                    "tx": {
-                        "bytes": "1076",
-                        "carrier": "0",
-                        "collisions": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "packets": "14"
-                    }
-                },
-                "veth7fd09ac": {
-                    "rx": {
-                        "bytes": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "overrun": "0",
-                        "packets": "0"
-                    },
-                    "tx": {
-                        "bytes": "1076",
-                        "carrier": "0",
-                        "collisions": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "packets": "14"
-                    }
-                },
-                "veth83bbd25": {
-                    "rx": {
-                        "bytes": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "overrun": "0",
-                        "packets": "0"
-                    },
-                    "tx": {
-                        "bytes": "1076",
-                        "carrier": "0",
-                        "collisions": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "packets": "14"
-                    }
-                },
-                "veth9109100": {
-                    "rx": {
-                        "bytes": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "overrun": "0",
-                        "packets": "0"
-                    },
-                    "tx": {
-                        "bytes": "1076",
-                        "carrier": "0",
-                        "collisions": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "packets": "14"
-                    }
-                },
-                "vethaf631af": {
-                    "rx": {
-                        "bytes": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "overrun": "0",
-                        "packets": "0"
-                    },
-                    "tx": {
-                        "bytes": "1076",
-                        "carrier": "0",
-                        "collisions": "0",
-                        "drop": "0",
-                        "errors": "0",
-                        "packets": "14"
                     }
                 }
             }
@@ -3212,20 +2005,6 @@
                 "fs_type": "squashfs",
                 "inodes_available": "0",
                 "inodes_percent_used": "100%",
-                "inodes_used": "10833",
-                "kb_available": "0",
-                "kb_size": "56832",
-                "kb_used": "56832",
-                "mounts": [
-                    "/snap/core18/2246"
-                ],
-                "percent_used": "100%",
-                "total_inodes": "10833"
-            },
-            "/dev/loop1": {
-                "fs_type": "squashfs",
-                "inodes_available": "0",
-                "inodes_percent_used": "100%",
                 "inodes_used": "10847",
                 "kb_available": "0",
                 "kb_size": "56960",
@@ -3236,7 +2015,7 @@
                 "percent_used": "100%",
                 "total_inodes": "10847"
             },
-            "/dev/loop2": {
+            "/dev/loop1": {
                 "fs_type": "squashfs",
                 "inodes_available": "0",
                 "inodes_percent_used": "100%",
@@ -3249,6 +2028,20 @@
                 ],
                 "percent_used": "100%",
                 "total_inodes": "11776"
+            },
+            "/dev/loop2": {
+                "fs_type": "squashfs",
+                "inodes_available": "0",
+                "inodes_percent_used": "100%",
+                "inodes_used": "10833",
+                "kb_available": "0",
+                "kb_size": "56832",
+                "kb_used": "56832",
+                "mounts": [
+                    "/snap/core18/2246"
+                ],
+                "percent_used": "100%",
+                "total_inodes": "10833"
             },
             "/dev/loop3": {
                 "fs_type": "squashfs",
@@ -3268,15 +2061,15 @@
                 "fs_type": "squashfs",
                 "inodes_available": "0",
                 "inodes_percent_used": "100%",
-                "inodes_used": "3331",
+                "inodes_used": "482",
                 "kb_available": "0",
-                "kb_size": "37632",
-                "kb_used": "37632",
+                "kb_size": "44544",
+                "kb_used": "44544",
                 "mounts": [
-                    "/snap/gh/479"
+                    "/snap/snapd/14549"
                 ],
                 "percent_used": "100%",
-                "total_inodes": "3331"
+                "total_inodes": "482"
             },
             "/dev/loop5": {
                 "fs_type": "squashfs",
@@ -3296,6 +2089,20 @@
                 "fs_type": "squashfs",
                 "inodes_available": "0",
                 "inodes_percent_used": "100%",
+                "inodes_used": "3331",
+                "kb_available": "0",
+                "kb_size": "37632",
+                "kb_used": "37632",
+                "mounts": [
+                    "/snap/gh/479"
+                ],
+                "percent_used": "100%",
+                "total_inodes": "3331"
+            },
+            "/dev/loop7": {
+                "fs_type": "squashfs",
+                "inodes_available": "0",
+                "inodes_percent_used": "100%",
                 "inodes_used": "479",
                 "kb_available": "0",
                 "kb_size": "33280",
@@ -3305,20 +2112,6 @@
                 ],
                 "percent_used": "100%",
                 "total_inodes": "479"
-            },
-            "/dev/loop7": {
-                "fs_type": "squashfs",
-                "inodes_available": "0",
-                "inodes_percent_used": "100%",
-                "inodes_used": "482",
-                "kb_available": "0",
-                "kb_size": "44544",
-                "kb_used": "44544",
-                "mounts": [
-                    "/snap/snapd/14549"
-                ],
-                "percent_used": "100%",
-                "total_inodes": "482"
             },
             "/dev/loop8": {
                 "fs_type": "squashfs",
@@ -3336,12 +2129,12 @@
             },
             "/dev/mapper/ubuntu--vg-ubuntu--lv": {
                 "fs_type": "ext4",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
+                "inodes_available": "1021428",
+                "inodes_percent_used": "41%",
+                "inodes_used": "682508",
+                "kb_available": "3432868",
                 "kb_size": "26699940",
-                "kb_used": "20939088",
+                "kb_used": "21887744",
                 "mount_options": [
                     "rw",
                     "relatime"
@@ -3349,7 +2142,7 @@
                 "mounts": [
                     "/"
                 ],
-                "percent_used": "83%",
+                "percent_used": "87%",
                 "total_inodes": "1703936",
                 "uuid": "43f8ed2d-1bed-4abe-9543-77b1b96f6e1b"
             },
@@ -3502,21 +2295,21 @@
                     "nodev",
                     "noexec",
                     "relatime",
-                    "cpuset"
+                    "hugetlb"
                 ],
                 "mounts": [
                     "/sys/fs/cgroup/systemd",
+                    "/sys/fs/cgroup/cpuset",
                     "/sys/fs/cgroup/cpu,cpuacct",
-                    "/sys/fs/cgroup/hugetlb",
-                    "/sys/fs/cgroup/pids",
-                    "/sys/fs/cgroup/perf_event",
                     "/sys/fs/cgroup/blkio",
-                    "/sys/fs/cgroup/net_cls,net_prio",
+                    "/sys/fs/cgroup/pids",
                     "/sys/fs/cgroup/rdma",
-                    "/sys/fs/cgroup/memory",
-                    "/sys/fs/cgroup/devices",
                     "/sys/fs/cgroup/freezer",
-                    "/sys/fs/cgroup/cpuset"
+                    "/sys/fs/cgroup/net_cls,net_prio",
+                    "/sys/fs/cgroup/devices",
+                    "/sys/fs/cgroup/perf_event",
+                    "/sys/fs/cgroup/memory",
+                    "/sys/fs/cgroup/hugetlb"
                 ]
             },
             "cgroup2": {
@@ -3631,53 +2424,8 @@
                     "rw"
                 ],
                 "mounts": [
-                    "/run/snapd/ns/lxd.mnt",
-                    "/run/docker/netns/8700e323c7c1",
-                    "/run/docker/netns/8b4857dc41db",
-                    "/run/docker/netns/ad2cb639793f",
-                    "/run/docker/netns/a80f00976b09",
-                    "/run/docker/netns/f1d440c50444",
-                    "/run/docker/netns/ae2df9c89e0b",
-                    "/run/docker/netns/eb927cade470",
-                    "/run/docker/netns/d10daca7334f",
-                    "/run/docker/netns/41a9600adb97",
-                    "/run/docker/netns/ceb3649c9ea3",
-                    "/run/docker/netns/d2c5aeb84b00",
-                    "/run/docker/netns/ae9c071c0000"
+                    "/run/snapd/ns/lxd.mnt"
                 ]
-            },
-            "overlay": {
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/RQFG5TEBQCE7G2ZRTXZSAB2AFP:/var/lib/docker/overlay2/l/2VBTQEO26NU6EWQSVRJLKCMTZA:/var/lib/docker/overlay2/l/XWTRMUM562FFHD44AF4DN46BQX:/var/lib/docker/overlay2/l/VWHTPQA3VSN6ZS47Z2QADXOSHU:/var/lib/docker/overlay2/l/RAAABYP4QUCD3CPLLORTYCSNKR:/var/lib/docker/overlay2/l/KGVLVDV5TZSUORPRP5QS27EEZ4:/var/lib/docker/overlay2/l/3PDVC7BL7S2MPBII2ROBCR6LFV:/var/lib/docker/overlay2/l/RBLJPSVC7S6VFQ2BY3IRVM3O2F",
-                    "upperdir=/var/lib/docker/overlay2/07f66accec8e5ea9205d43ecbafcbf3b618833a8f5de2924e78eb6c3d7dbb445/diff",
-                    "workdir=/var/lib/docker/overlay2/07f66accec8e5ea9205d43ecbafcbf3b618833a8f5de2924e78eb6c3d7dbb445/work",
-                    "xino=off"
-                ],
-                "mounts": [
-                    "/var/lib/docker/overlay2/233ba6454160a949f86cbe0cbf949d4fc49db3634abd5accfdf58340ec0690ad/merged",
-                    "/var/lib/docker/overlay2/965a571d8e640bd26ee64b793967e7c633275945ea5c4fd04aa079e9752a76e3/merged",
-                    "/var/lib/docker/overlay2/bef080335dc8fca9401e336db3d6fd69d66d38b07175beedaf4fa9cc57e4abd0/merged",
-                    "/var/lib/docker/overlay2/6f7890ef45eaa7b4d5f2f3d31c7b4977b459dc5e3c277120c725f892adf3a343/merged",
-                    "/var/lib/docker/overlay2/4652c113a81002dd421add7ae401383a662cb4e9bb4f1a10c74315160b41eb5b/merged",
-                    "/var/lib/docker/overlay2/452697698fee33a1afb7bba7d28b91cd07d85d5a0f3b41712d1e3bc4f5b566e3/merged",
-                    "/var/lib/docker/overlay2/90547ef4293f42e3e0a382872adb3b25f097c804c9f30b17ed967e83c8138667/merged",
-                    "/var/lib/docker/overlay2/5ee9031ee82224c082b19c3a53ef8426667a298176f700e3fc434646b9e7a613/merged",
-                    "/var/lib/docker/overlay2/243df619bccaf15516fcb2d2086d15d221735c5e0de51faec41d56badc269596/merged",
-                    "/var/lib/docker/overlay2/6e482f512fc4d17428acafd8aef09e2226258a00410cb63fa4751a063c521f70/merged",
-                    "/var/lib/docker/overlay2/507702b50090d886db8a513561f1e56d582381793216e38f4e74670033a7a541/merged",
-                    "/var/lib/docker/overlay2/07f66accec8e5ea9205d43ecbafcbf3b618833a8f5de2924e78eb6c3d7dbb445/merged"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
             },
             "proc": {
                 "fs_type": "proc",
@@ -3742,7 +2490,7 @@
                     "minproto=5",
                     "maxproto=5",
                     "direct",
-                    "pipe_ino=18767"
+                    "pipe_ino=16868"
                 ],
                 "mounts": [
                     "/proc/sys/fs/binfmt_misc"
@@ -3819,17 +2567,17 @@
                     "/dev/mapper/ubuntu--vg-ubuntu--lv"
                 ],
                 "fs_type": "ext4",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
+                "inodes_available": "1021428",
+                "inodes_percent_used": "41%",
+                "inodes_used": "682508",
+                "kb_available": "3432868",
                 "kb_size": "26699940",
-                "kb_used": "20939088",
+                "kb_used": "21887744",
                 "mount_options": [
                     "rw",
                     "relatime"
                 ],
-                "percent_used": "83%",
+                "percent_used": "87%",
                 "total_inodes": "1703936",
                 "uuid": "43f8ed2d-1bed-4abe-9543-77b1b96f6e1b"
             },
@@ -3960,7 +2708,7 @@
                     "minproto=5",
                     "maxproto=5",
                     "direct",
-                    "pipe_ino=18767"
+                    "pipe_ino=16868"
                 ]
             },
             "/run": {
@@ -3968,12 +2716,12 @@
                     "tmpfs"
                 ],
                 "fs_type": "tmpfs",
-                "inodes_available": "751246",
+                "inodes_available": "751492",
                 "inodes_percent_used": "1%",
-                "inodes_used": "1054",
-                "kb_available": "599676",
+                "inodes_used": "808",
+                "kb_available": "600684",
                 "kb_size": "601840",
-                "kb_used": "2164",
+                "kb_used": "1156",
                 "mount_options": [
                     "rw",
                     "nosuid",
@@ -3985,114 +2733,6 @@
                 ],
                 "percent_used": "1%",
                 "total_inodes": "752300"
-            },
-            "/run/docker/netns/41a9600adb97": {
-                "devices": [
-                    "nsfs"
-                ],
-                "fs_type": "nsfs",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "/run/docker/netns/8700e323c7c1": {
-                "devices": [
-                    "nsfs"
-                ],
-                "fs_type": "nsfs",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "/run/docker/netns/8b4857dc41db": {
-                "devices": [
-                    "nsfs"
-                ],
-                "fs_type": "nsfs",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "/run/docker/netns/a80f00976b09": {
-                "devices": [
-                    "nsfs"
-                ],
-                "fs_type": "nsfs",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "/run/docker/netns/ad2cb639793f": {
-                "devices": [
-                    "nsfs"
-                ],
-                "fs_type": "nsfs",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "/run/docker/netns/ae2df9c89e0b": {
-                "devices": [
-                    "nsfs"
-                ],
-                "fs_type": "nsfs",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "/run/docker/netns/ae9c071c0000": {
-                "devices": [
-                    "nsfs"
-                ],
-                "fs_type": "nsfs",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "/run/docker/netns/ceb3649c9ea3": {
-                "devices": [
-                    "nsfs"
-                ],
-                "fs_type": "nsfs",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "/run/docker/netns/d10daca7334f": {
-                "devices": [
-                    "nsfs"
-                ],
-                "fs_type": "nsfs",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "/run/docker/netns/d2c5aeb84b00": {
-                "devices": [
-                    "nsfs"
-                ],
-                "fs_type": "nsfs",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "/run/docker/netns/eb927cade470": {
-                "devices": [
-                    "nsfs"
-                ],
-                "fs_type": "nsfs",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "/run/docker/netns/f1d440c50444": {
-                "devices": [
-                    "nsfs"
-                ],
-                "fs_type": "nsfs",
-                "mount_options": [
-                    "rw"
-                ]
             },
             "/run/lock": {
                 "devices": [
@@ -4166,7 +2806,7 @@
             },
             "/snap/core18/2246": {
                 "devices": [
-                    "/dev/loop0",
+                    "/dev/loop2",
                     "/var/lib/snapd/snaps/core18_2246.snap"
                 ],
                 "fs_type": "squashfs",
@@ -4187,7 +2827,7 @@
             },
             "/snap/core18/2284": {
                 "devices": [
-                    "/dev/loop1",
+                    "/dev/loop0",
                     "/var/lib/snapd/snaps/core18_2284.snap"
                 ],
                 "fs_type": "squashfs",
@@ -4208,7 +2848,7 @@
             },
             "/snap/core20/1270": {
                 "devices": [
-                    "/dev/loop2",
+                    "/dev/loop1",
                     "/var/lib/snapd/snaps/core20_1270.snap"
                 ],
                 "fs_type": "squashfs",
@@ -4250,7 +2890,7 @@
             },
             "/snap/gh/479": {
                 "devices": [
-                    "/dev/loop4",
+                    "/dev/loop6",
                     "/var/lib/snapd/snaps/gh_479.snap"
                 ],
                 "fs_type": "squashfs",
@@ -4313,7 +2953,7 @@
             },
             "/snap/snapd/13640": {
                 "devices": [
-                    "/dev/loop6",
+                    "/dev/loop7",
                     "/var/lib/snapd/snaps/snapd_13640.snap"
                 ],
                 "fs_type": "squashfs",
@@ -4334,7 +2974,7 @@
             },
             "/snap/snapd/14549": {
                 "devices": [
-                    "/dev/loop7",
+                    "/dev/loop4",
                     "/var/lib/snapd/snaps/snapd_14549.snap"
                 ],
                 "fs_type": "squashfs",
@@ -4663,288 +3303,11 @@
                     "noexec",
                     "relatime"
                 ]
-            },
-            "/var/lib/docker/overlay2/07f66accec8e5ea9205d43ecbafcbf3b618833a8f5de2924e78eb6c3d7dbb445/merged": {
-                "devices": [
-                    "overlay"
-                ],
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/RQFG5TEBQCE7G2ZRTXZSAB2AFP:/var/lib/docker/overlay2/l/2VBTQEO26NU6EWQSVRJLKCMTZA:/var/lib/docker/overlay2/l/XWTRMUM562FFHD44AF4DN46BQX:/var/lib/docker/overlay2/l/VWHTPQA3VSN6ZS47Z2QADXOSHU:/var/lib/docker/overlay2/l/RAAABYP4QUCD3CPLLORTYCSNKR:/var/lib/docker/overlay2/l/KGVLVDV5TZSUORPRP5QS27EEZ4:/var/lib/docker/overlay2/l/3PDVC7BL7S2MPBII2ROBCR6LFV:/var/lib/docker/overlay2/l/RBLJPSVC7S6VFQ2BY3IRVM3O2F",
-                    "upperdir=/var/lib/docker/overlay2/07f66accec8e5ea9205d43ecbafcbf3b618833a8f5de2924e78eb6c3d7dbb445/diff",
-                    "workdir=/var/lib/docker/overlay2/07f66accec8e5ea9205d43ecbafcbf3b618833a8f5de2924e78eb6c3d7dbb445/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "/var/lib/docker/overlay2/233ba6454160a949f86cbe0cbf949d4fc49db3634abd5accfdf58340ec0690ad/merged": {
-                "devices": [
-                    "overlay"
-                ],
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/7FYK5OKVKT5DVWO33VUP5XAAF6:/var/lib/docker/overlay2/l/H6JYI7BYWZG22PWFXSGUQHMEDM:/var/lib/docker/overlay2/l/UZCKBV73W7XY2USLXRWCWXC6HX:/var/lib/docker/overlay2/l/4QXAQIVBOL6RT66STZNXKYQXRV:/var/lib/docker/overlay2/l/CBIX3CNLMV7BJFPZNSMK3NLER3:/var/lib/docker/overlay2/l/V7IZJKOMHZR3N2RGFMK7ZN4CKZ:/var/lib/docker/overlay2/l/MAT7EOUBKPUQ5AKUMBQT5JUPHZ:/var/lib/docker/overlay2/l/LGZ7B76MFGAI6CQNO4TSXQ3CML:/var/lib/docker/overlay2/l/EAYTRAKK2QPXNP3UXIIPOHQC7F:/var/lib/docker/overlay2/l/7CSKGX3P4TJXWUG64PRHR4PKRX",
-                    "upperdir=/var/lib/docker/overlay2/233ba6454160a949f86cbe0cbf949d4fc49db3634abd5accfdf58340ec0690ad/diff",
-                    "workdir=/var/lib/docker/overlay2/233ba6454160a949f86cbe0cbf949d4fc49db3634abd5accfdf58340ec0690ad/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "/var/lib/docker/overlay2/243df619bccaf15516fcb2d2086d15d221735c5e0de51faec41d56badc269596/merged": {
-                "devices": [
-                    "overlay"
-                ],
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/M64THNKRAX6HCIJOQQW7VPI76G:/var/lib/docker/overlay2/l/QFIRSFBD5ZAUU7MKUTUYRAQGVD:/var/lib/docker/overlay2/l/XA3TZ7UTA7TBVGH5K6O4ANWIXV:/var/lib/docker/overlay2/l/G25D7FM67WTZNGFTP5KQVVEDAD:/var/lib/docker/overlay2/l/LKLMIFIF7O7VUKWDV64QQXEGNK:/var/lib/docker/overlay2/l/ERC4JT76F4G2G4PCLVQZJJUL67",
-                    "upperdir=/var/lib/docker/overlay2/243df619bccaf15516fcb2d2086d15d221735c5e0de51faec41d56badc269596/diff",
-                    "workdir=/var/lib/docker/overlay2/243df619bccaf15516fcb2d2086d15d221735c5e0de51faec41d56badc269596/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "/var/lib/docker/overlay2/452697698fee33a1afb7bba7d28b91cd07d85d5a0f3b41712d1e3bc4f5b566e3/merged": {
-                "devices": [
-                    "overlay"
-                ],
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/P3EGVGT4FGTIURCI6KBVO7BN43:/var/lib/docker/overlay2/l/DEHL6UZCNJFMGPU5SPJCCQASAE:/var/lib/docker/overlay2/l/XAS3QD56RU4RSW4JSLBRY2CKIO:/var/lib/docker/overlay2/l/2SA3FKNUMKSG7PKALJXETZKHCK:/var/lib/docker/overlay2/l/RVZJDYBZONF5GJCMSNPPU2W25Q:/var/lib/docker/overlay2/l/W3FCYSHB5VEOGINIQ3JZSC7COA",
-                    "upperdir=/var/lib/docker/overlay2/452697698fee33a1afb7bba7d28b91cd07d85d5a0f3b41712d1e3bc4f5b566e3/diff",
-                    "workdir=/var/lib/docker/overlay2/452697698fee33a1afb7bba7d28b91cd07d85d5a0f3b41712d1e3bc4f5b566e3/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "/var/lib/docker/overlay2/4652c113a81002dd421add7ae401383a662cb4e9bb4f1a10c74315160b41eb5b/merged": {
-                "devices": [
-                    "overlay"
-                ],
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/C5XYY6CXSIPEFCQFIZZXMCIPUM:/var/lib/docker/overlay2/l/IWULMTSCC5U2UYPMEM6BPJQWKU:/var/lib/docker/overlay2/l/YRZVRAPDHYM7CAPRQVCY3ETPNG:/var/lib/docker/overlay2/l/Q5OA5AWY2VT3QEN5F7M2CSFM5B:/var/lib/docker/overlay2/l/FRC7UDMGKFOGJ43KEZALAX4IHD:/var/lib/docker/overlay2/l/WLDDFBQJCDOIFLKGYISLTIZF7C",
-                    "upperdir=/var/lib/docker/overlay2/4652c113a81002dd421add7ae401383a662cb4e9bb4f1a10c74315160b41eb5b/diff",
-                    "workdir=/var/lib/docker/overlay2/4652c113a81002dd421add7ae401383a662cb4e9bb4f1a10c74315160b41eb5b/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "/var/lib/docker/overlay2/507702b50090d886db8a513561f1e56d582381793216e38f4e74670033a7a541/merged": {
-                "devices": [
-                    "overlay"
-                ],
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/3B4ONF3SYMZM2EDZW565NVYTKH:/var/lib/docker/overlay2/l/SAMQ5XL5E4LVIGXXHML7VAB7BM:/var/lib/docker/overlay2/l/HNUDZ732VAYD3YOSPSQYZ4RI4H:/var/lib/docker/overlay2/l/7Q7JRYZBGTBK7DLSUNVEFS4FS4:/var/lib/docker/overlay2/l/FMRAP3BEPMOHM2K27DH6PIV5LB:/var/lib/docker/overlay2/l/LNRPG6JCO74I4KSKFWD5RIRPSR:/var/lib/docker/overlay2/l/HWGZ45CWLW6ISEI4WS4QKAIAUT",
-                    "upperdir=/var/lib/docker/overlay2/507702b50090d886db8a513561f1e56d582381793216e38f4e74670033a7a541/diff",
-                    "workdir=/var/lib/docker/overlay2/507702b50090d886db8a513561f1e56d582381793216e38f4e74670033a7a541/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "/var/lib/docker/overlay2/5ee9031ee82224c082b19c3a53ef8426667a298176f700e3fc434646b9e7a613/merged": {
-                "devices": [
-                    "overlay"
-                ],
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/DJOQD23NTRFUIDDAQTND5PK3VM:/var/lib/docker/overlay2/l/7VW3A2MDZWEM7UCPWKEUXOKLPM:/var/lib/docker/overlay2/l/4C3UQWNBQPDM52L4C4U54IB4NN:/var/lib/docker/overlay2/l/ETWGEAVP6USTPREWNP4N22A7YK:/var/lib/docker/overlay2/l/GGA6FZSAUUQZWYPBVP7SGL3MII:/var/lib/docker/overlay2/l/YNCMQPJBMVDMVLPLJYOYDLDYNR",
-                    "upperdir=/var/lib/docker/overlay2/5ee9031ee82224c082b19c3a53ef8426667a298176f700e3fc434646b9e7a613/diff",
-                    "workdir=/var/lib/docker/overlay2/5ee9031ee82224c082b19c3a53ef8426667a298176f700e3fc434646b9e7a613/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "/var/lib/docker/overlay2/6e482f512fc4d17428acafd8aef09e2226258a00410cb63fa4751a063c521f70/merged": {
-                "devices": [
-                    "overlay"
-                ],
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/G7JWTQWUJKXXAVQ2KLDKLOUSVP:/var/lib/docker/overlay2/l/SIPPWQRDLOKOPN7UQAPE5K5SXM:/var/lib/docker/overlay2/l/IWFM7Q6WHL7RJQWGUFORMWY3FU:/var/lib/docker/overlay2/l/OOVG3LNFZKE2NVH3WTO4DZZKM3:/var/lib/docker/overlay2/l/DGSBRNYB52SPTDTJRRYV3NKCGF",
-                    "upperdir=/var/lib/docker/overlay2/6e482f512fc4d17428acafd8aef09e2226258a00410cb63fa4751a063c521f70/diff",
-                    "workdir=/var/lib/docker/overlay2/6e482f512fc4d17428acafd8aef09e2226258a00410cb63fa4751a063c521f70/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "/var/lib/docker/overlay2/6f7890ef45eaa7b4d5f2f3d31c7b4977b459dc5e3c277120c725f892adf3a343/merged": {
-                "devices": [
-                    "overlay"
-                ],
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/V6OTZYKFLR247N6CJ6JJHU6HCV:/var/lib/docker/overlay2/l/2ECPWRZZ2VYNDLXOM6NGIXV4RX:/var/lib/docker/overlay2/l/43J4MWFXGT7V6YIIO64GXTUIOD:/var/lib/docker/overlay2/l/SIPYPRCCSQ4ZSVM2YEBHNEMT47:/var/lib/docker/overlay2/l/WXKE3PFTSDMQRKWZUI7N2BL5ZW:/var/lib/docker/overlay2/l/HQFTBMT36VDL4ZQ6TLC44OVWZA:/var/lib/docker/overlay2/l/636ATXL3TE32WWZ3TERN73W6NQ:/var/lib/docker/overlay2/l/FDQJFRYEE4LZY6YUKORKVJPJAT",
-                    "upperdir=/var/lib/docker/overlay2/6f7890ef45eaa7b4d5f2f3d31c7b4977b459dc5e3c277120c725f892adf3a343/diff",
-                    "workdir=/var/lib/docker/overlay2/6f7890ef45eaa7b4d5f2f3d31c7b4977b459dc5e3c277120c725f892adf3a343/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "/var/lib/docker/overlay2/90547ef4293f42e3e0a382872adb3b25f097c804c9f30b17ed967e83c8138667/merged": {
-                "devices": [
-                    "overlay"
-                ],
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/Q4KKX6S7SNTFXJADCPILWSWPFB:/var/lib/docker/overlay2/l/KZNFBQK2SS2YPTIKBM2WEBWO7I:/var/lib/docker/overlay2/l/VNKG2YKIFSVZMAROLLRTZBVLKN:/var/lib/docker/overlay2/l/RHFODMSWLIEE3OMJZBAQILEB4J:/var/lib/docker/overlay2/l/CXKPR2V4MDRQL4GU5SZQYWG543:/var/lib/docker/overlay2/l/LEXR4PRTZLGND5EMJUFESZZVJM",
-                    "upperdir=/var/lib/docker/overlay2/90547ef4293f42e3e0a382872adb3b25f097c804c9f30b17ed967e83c8138667/diff",
-                    "workdir=/var/lib/docker/overlay2/90547ef4293f42e3e0a382872adb3b25f097c804c9f30b17ed967e83c8138667/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "/var/lib/docker/overlay2/965a571d8e640bd26ee64b793967e7c633275945ea5c4fd04aa079e9752a76e3/merged": {
-                "devices": [
-                    "overlay"
-                ],
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/CA4M2DBIKYB6GZ4KYA2WH67CEW:/var/lib/docker/overlay2/l/LVJLIHDZ5ROJR4Y7ERJAAL5OYT:/var/lib/docker/overlay2/l/LYOMBMCFJJIBUY75G423EWXLAG:/var/lib/docker/overlay2/l/FOCHTZXHRELB5C5IW4IVPM4Y7R:/var/lib/docker/overlay2/l/WDLPTBTGXIB34XDA6RBM3SFV4D:/var/lib/docker/overlay2/l/RVW525ZRCLBXTOKYHU2IBRK6PD:/var/lib/docker/overlay2/l/73RHJHUYOO6VISFWKCS3G7H54Y:/var/lib/docker/overlay2/l/D6E6QQD5YYJ62I53I27BCPVDUX:/var/lib/docker/overlay2/l/EWLSK5FIRMSOQOKDNFLDPNPD4J:/var/lib/docker/overlay2/l/YGU2HIXSBBBY2DZP65PFZBAKYE:/var/lib/docker/overlay2/l/JHF3DMCBYGBPJ23MJBT4QKIV2T",
-                    "upperdir=/var/lib/docker/overlay2/965a571d8e640bd26ee64b793967e7c633275945ea5c4fd04aa079e9752a76e3/diff",
-                    "workdir=/var/lib/docker/overlay2/965a571d8e640bd26ee64b793967e7c633275945ea5c4fd04aa079e9752a76e3/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "/var/lib/docker/overlay2/bef080335dc8fca9401e336db3d6fd69d66d38b07175beedaf4fa9cc57e4abd0/merged": {
-                "devices": [
-                    "overlay"
-                ],
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/X7E5MTV27MSJN36WQQTWVDY3TV:/var/lib/docker/overlay2/l/C4X2UVCTEUCYP2S2XDNMSCYMXQ:/var/lib/docker/overlay2/l/YCXKUKCFNWUTKQZ4R7ZDXP2CNZ:/var/lib/docker/overlay2/l/TWDM5YD77C3QLPKOQ33XUEFG5M:/var/lib/docker/overlay2/l/EIM5U2MHUUAYVS5IT6MR4JQUF4:/var/lib/docker/overlay2/l/AZ3CO4DZ2AUUIQ27NF4GPNI22D:/var/lib/docker/overlay2/l/WVTNLPPSN3YETUOZB3HWANUG72:/var/lib/docker/overlay2/l/YSQM7EPSGZOHBMY4MGP7HKMEWM",
-                    "upperdir=/var/lib/docker/overlay2/bef080335dc8fca9401e336db3d6fd69d66d38b07175beedaf4fa9cc57e4abd0/diff",
-                    "workdir=/var/lib/docker/overlay2/bef080335dc8fca9401e336db3d6fd69d66d38b07175beedaf4fa9cc57e4abd0/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
             }
         },
         "by_pair": {
-            "/dev/loop0,/snap/core18/2246": {
+            "/dev/loop0,/snap/core18/2284": {
                 "device": "/dev/loop0",
-                "fs_type": "squashfs",
-                "inodes_available": "0",
-                "inodes_percent_used": "100%",
-                "inodes_used": "10833",
-                "kb_available": "0",
-                "kb_size": "56832",
-                "kb_used": "56832",
-                "mount": "/snap/core18/2246",
-                "percent_used": "100%",
-                "total_inodes": "10833"
-            },
-            "/dev/loop1,/snap/core18/2284": {
-                "device": "/dev/loop1",
                 "fs_type": "squashfs",
                 "inodes_available": "0",
                 "inodes_percent_used": "100%",
@@ -4956,8 +3319,8 @@
                 "percent_used": "100%",
                 "total_inodes": "10847"
             },
-            "/dev/loop2,/snap/core20/1270": {
-                "device": "/dev/loop2",
+            "/dev/loop1,/snap/core20/1270": {
+                "device": "/dev/loop1",
                 "fs_type": "squashfs",
                 "inodes_available": "0",
                 "inodes_percent_used": "100%",
@@ -4968,6 +3331,19 @@
                 "mount": "/snap/core20/1270",
                 "percent_used": "100%",
                 "total_inodes": "11776"
+            },
+            "/dev/loop2,/snap/core18/2246": {
+                "device": "/dev/loop2",
+                "fs_type": "squashfs",
+                "inodes_available": "0",
+                "inodes_percent_used": "100%",
+                "inodes_used": "10833",
+                "kb_available": "0",
+                "kb_size": "56832",
+                "kb_used": "56832",
+                "mount": "/snap/core18/2246",
+                "percent_used": "100%",
+                "total_inodes": "10833"
             },
             "/dev/loop3,/snap/core20/1328": {
                 "device": "/dev/loop3",
@@ -4982,18 +3358,18 @@
                 "percent_used": "100%",
                 "total_inodes": "11777"
             },
-            "/dev/loop4,/snap/gh/479": {
+            "/dev/loop4,/snap/snapd/14549": {
                 "device": "/dev/loop4",
                 "fs_type": "squashfs",
                 "inodes_available": "0",
                 "inodes_percent_used": "100%",
-                "inodes_used": "3331",
+                "inodes_used": "482",
                 "kb_available": "0",
-                "kb_size": "37632",
-                "kb_used": "37632",
-                "mount": "/snap/gh/479",
+                "kb_size": "44544",
+                "kb_used": "44544",
+                "mount": "/snap/snapd/14549",
                 "percent_used": "100%",
-                "total_inodes": "3331"
+                "total_inodes": "482"
             },
             "/dev/loop5,/snap/lxd/21835": {
                 "device": "/dev/loop5",
@@ -5008,8 +3384,21 @@
                 "percent_used": "100%",
                 "total_inodes": "796"
             },
-            "/dev/loop6,/snap/snapd/13640": {
+            "/dev/loop6,/snap/gh/479": {
                 "device": "/dev/loop6",
+                "fs_type": "squashfs",
+                "inodes_available": "0",
+                "inodes_percent_used": "100%",
+                "inodes_used": "3331",
+                "kb_available": "0",
+                "kb_size": "37632",
+                "kb_used": "37632",
+                "mount": "/snap/gh/479",
+                "percent_used": "100%",
+                "total_inodes": "3331"
+            },
+            "/dev/loop7,/snap/snapd/13640": {
+                "device": "/dev/loop7",
                 "fs_type": "squashfs",
                 "inodes_available": "0",
                 "inodes_percent_used": "100%",
@@ -5020,19 +3409,6 @@
                 "mount": "/snap/snapd/13640",
                 "percent_used": "100%",
                 "total_inodes": "479"
-            },
-            "/dev/loop7,/snap/snapd/14549": {
-                "device": "/dev/loop7",
-                "fs_type": "squashfs",
-                "inodes_available": "0",
-                "inodes_percent_used": "100%",
-                "inodes_used": "482",
-                "kb_available": "0",
-                "kb_size": "44544",
-                "kb_used": "44544",
-                "mount": "/snap/snapd/14549",
-                "percent_used": "100%",
-                "total_inodes": "482"
             },
             "/dev/loop8,/snap/lxd/21029": {
                 "device": "/dev/loop8",
@@ -5050,18 +3426,18 @@
             "/dev/mapper/ubuntu--vg-ubuntu--lv,/": {
                 "device": "/dev/mapper/ubuntu--vg-ubuntu--lv",
                 "fs_type": "ext4",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
+                "inodes_available": "1021428",
+                "inodes_percent_used": "41%",
+                "inodes_used": "682508",
+                "kb_available": "3432868",
                 "kb_size": "26699940",
-                "kb_used": "20939088",
+                "kb_used": "21887744",
                 "mount": "/",
                 "mount_options": [
                     "rw",
                     "relatime"
                 ],
-                "percent_used": "83%",
+                "percent_used": "87%",
                 "total_inodes": "1703936",
                 "uuid": "43f8ed2d-1bed-4abe-9543-77b1b96f6e1b"
             },
@@ -5453,102 +3829,6 @@
                     "mode=700"
                 ]
             },
-            "nsfs,/run/docker/netns/41a9600adb97": {
-                "device": "nsfs",
-                "fs_type": "nsfs",
-                "mount": "/run/docker/netns/41a9600adb97",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "nsfs,/run/docker/netns/8700e323c7c1": {
-                "device": "nsfs",
-                "fs_type": "nsfs",
-                "mount": "/run/docker/netns/8700e323c7c1",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "nsfs,/run/docker/netns/8b4857dc41db": {
-                "device": "nsfs",
-                "fs_type": "nsfs",
-                "mount": "/run/docker/netns/8b4857dc41db",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "nsfs,/run/docker/netns/a80f00976b09": {
-                "device": "nsfs",
-                "fs_type": "nsfs",
-                "mount": "/run/docker/netns/a80f00976b09",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "nsfs,/run/docker/netns/ad2cb639793f": {
-                "device": "nsfs",
-                "fs_type": "nsfs",
-                "mount": "/run/docker/netns/ad2cb639793f",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "nsfs,/run/docker/netns/ae2df9c89e0b": {
-                "device": "nsfs",
-                "fs_type": "nsfs",
-                "mount": "/run/docker/netns/ae2df9c89e0b",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "nsfs,/run/docker/netns/ae9c071c0000": {
-                "device": "nsfs",
-                "fs_type": "nsfs",
-                "mount": "/run/docker/netns/ae9c071c0000",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "nsfs,/run/docker/netns/ceb3649c9ea3": {
-                "device": "nsfs",
-                "fs_type": "nsfs",
-                "mount": "/run/docker/netns/ceb3649c9ea3",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "nsfs,/run/docker/netns/d10daca7334f": {
-                "device": "nsfs",
-                "fs_type": "nsfs",
-                "mount": "/run/docker/netns/d10daca7334f",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "nsfs,/run/docker/netns/d2c5aeb84b00": {
-                "device": "nsfs",
-                "fs_type": "nsfs",
-                "mount": "/run/docker/netns/d2c5aeb84b00",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "nsfs,/run/docker/netns/eb927cade470": {
-                "device": "nsfs",
-                "fs_type": "nsfs",
-                "mount": "/run/docker/netns/eb927cade470",
-                "mount_options": [
-                    "rw"
-                ]
-            },
-            "nsfs,/run/docker/netns/f1d440c50444": {
-                "device": "nsfs",
-                "fs_type": "nsfs",
-                "mount": "/run/docker/netns/f1d440c50444",
-                "mount_options": [
-                    "rw"
-                ]
-            },
             "nsfs,/run/snapd/ns/lxd.mnt": {
                 "device": "nsfs",
                 "fs_type": "nsfs",
@@ -5556,258 +3836,6 @@
                 "mount_options": [
                     "rw"
                 ]
-            },
-            "overlay,/var/lib/docker/overlay2/07f66accec8e5ea9205d43ecbafcbf3b618833a8f5de2924e78eb6c3d7dbb445/merged": {
-                "device": "overlay",
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount": "/var/lib/docker/overlay2/07f66accec8e5ea9205d43ecbafcbf3b618833a8f5de2924e78eb6c3d7dbb445/merged",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/RQFG5TEBQCE7G2ZRTXZSAB2AFP:/var/lib/docker/overlay2/l/2VBTQEO26NU6EWQSVRJLKCMTZA:/var/lib/docker/overlay2/l/XWTRMUM562FFHD44AF4DN46BQX:/var/lib/docker/overlay2/l/VWHTPQA3VSN6ZS47Z2QADXOSHU:/var/lib/docker/overlay2/l/RAAABYP4QUCD3CPLLORTYCSNKR:/var/lib/docker/overlay2/l/KGVLVDV5TZSUORPRP5QS27EEZ4:/var/lib/docker/overlay2/l/3PDVC7BL7S2MPBII2ROBCR6LFV:/var/lib/docker/overlay2/l/RBLJPSVC7S6VFQ2BY3IRVM3O2F",
-                    "upperdir=/var/lib/docker/overlay2/07f66accec8e5ea9205d43ecbafcbf3b618833a8f5de2924e78eb6c3d7dbb445/diff",
-                    "workdir=/var/lib/docker/overlay2/07f66accec8e5ea9205d43ecbafcbf3b618833a8f5de2924e78eb6c3d7dbb445/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "overlay,/var/lib/docker/overlay2/233ba6454160a949f86cbe0cbf949d4fc49db3634abd5accfdf58340ec0690ad/merged": {
-                "device": "overlay",
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount": "/var/lib/docker/overlay2/233ba6454160a949f86cbe0cbf949d4fc49db3634abd5accfdf58340ec0690ad/merged",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/7FYK5OKVKT5DVWO33VUP5XAAF6:/var/lib/docker/overlay2/l/H6JYI7BYWZG22PWFXSGUQHMEDM:/var/lib/docker/overlay2/l/UZCKBV73W7XY2USLXRWCWXC6HX:/var/lib/docker/overlay2/l/4QXAQIVBOL6RT66STZNXKYQXRV:/var/lib/docker/overlay2/l/CBIX3CNLMV7BJFPZNSMK3NLER3:/var/lib/docker/overlay2/l/V7IZJKOMHZR3N2RGFMK7ZN4CKZ:/var/lib/docker/overlay2/l/MAT7EOUBKPUQ5AKUMBQT5JUPHZ:/var/lib/docker/overlay2/l/LGZ7B76MFGAI6CQNO4TSXQ3CML:/var/lib/docker/overlay2/l/EAYTRAKK2QPXNP3UXIIPOHQC7F:/var/lib/docker/overlay2/l/7CSKGX3P4TJXWUG64PRHR4PKRX",
-                    "upperdir=/var/lib/docker/overlay2/233ba6454160a949f86cbe0cbf949d4fc49db3634abd5accfdf58340ec0690ad/diff",
-                    "workdir=/var/lib/docker/overlay2/233ba6454160a949f86cbe0cbf949d4fc49db3634abd5accfdf58340ec0690ad/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "overlay,/var/lib/docker/overlay2/243df619bccaf15516fcb2d2086d15d221735c5e0de51faec41d56badc269596/merged": {
-                "device": "overlay",
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount": "/var/lib/docker/overlay2/243df619bccaf15516fcb2d2086d15d221735c5e0de51faec41d56badc269596/merged",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/M64THNKRAX6HCIJOQQW7VPI76G:/var/lib/docker/overlay2/l/QFIRSFBD5ZAUU7MKUTUYRAQGVD:/var/lib/docker/overlay2/l/XA3TZ7UTA7TBVGH5K6O4ANWIXV:/var/lib/docker/overlay2/l/G25D7FM67WTZNGFTP5KQVVEDAD:/var/lib/docker/overlay2/l/LKLMIFIF7O7VUKWDV64QQXEGNK:/var/lib/docker/overlay2/l/ERC4JT76F4G2G4PCLVQZJJUL67",
-                    "upperdir=/var/lib/docker/overlay2/243df619bccaf15516fcb2d2086d15d221735c5e0de51faec41d56badc269596/diff",
-                    "workdir=/var/lib/docker/overlay2/243df619bccaf15516fcb2d2086d15d221735c5e0de51faec41d56badc269596/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "overlay,/var/lib/docker/overlay2/452697698fee33a1afb7bba7d28b91cd07d85d5a0f3b41712d1e3bc4f5b566e3/merged": {
-                "device": "overlay",
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount": "/var/lib/docker/overlay2/452697698fee33a1afb7bba7d28b91cd07d85d5a0f3b41712d1e3bc4f5b566e3/merged",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/P3EGVGT4FGTIURCI6KBVO7BN43:/var/lib/docker/overlay2/l/DEHL6UZCNJFMGPU5SPJCCQASAE:/var/lib/docker/overlay2/l/XAS3QD56RU4RSW4JSLBRY2CKIO:/var/lib/docker/overlay2/l/2SA3FKNUMKSG7PKALJXETZKHCK:/var/lib/docker/overlay2/l/RVZJDYBZONF5GJCMSNPPU2W25Q:/var/lib/docker/overlay2/l/W3FCYSHB5VEOGINIQ3JZSC7COA",
-                    "upperdir=/var/lib/docker/overlay2/452697698fee33a1afb7bba7d28b91cd07d85d5a0f3b41712d1e3bc4f5b566e3/diff",
-                    "workdir=/var/lib/docker/overlay2/452697698fee33a1afb7bba7d28b91cd07d85d5a0f3b41712d1e3bc4f5b566e3/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "overlay,/var/lib/docker/overlay2/4652c113a81002dd421add7ae401383a662cb4e9bb4f1a10c74315160b41eb5b/merged": {
-                "device": "overlay",
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount": "/var/lib/docker/overlay2/4652c113a81002dd421add7ae401383a662cb4e9bb4f1a10c74315160b41eb5b/merged",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/C5XYY6CXSIPEFCQFIZZXMCIPUM:/var/lib/docker/overlay2/l/IWULMTSCC5U2UYPMEM6BPJQWKU:/var/lib/docker/overlay2/l/YRZVRAPDHYM7CAPRQVCY3ETPNG:/var/lib/docker/overlay2/l/Q5OA5AWY2VT3QEN5F7M2CSFM5B:/var/lib/docker/overlay2/l/FRC7UDMGKFOGJ43KEZALAX4IHD:/var/lib/docker/overlay2/l/WLDDFBQJCDOIFLKGYISLTIZF7C",
-                    "upperdir=/var/lib/docker/overlay2/4652c113a81002dd421add7ae401383a662cb4e9bb4f1a10c74315160b41eb5b/diff",
-                    "workdir=/var/lib/docker/overlay2/4652c113a81002dd421add7ae401383a662cb4e9bb4f1a10c74315160b41eb5b/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "overlay,/var/lib/docker/overlay2/507702b50090d886db8a513561f1e56d582381793216e38f4e74670033a7a541/merged": {
-                "device": "overlay",
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount": "/var/lib/docker/overlay2/507702b50090d886db8a513561f1e56d582381793216e38f4e74670033a7a541/merged",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/3B4ONF3SYMZM2EDZW565NVYTKH:/var/lib/docker/overlay2/l/SAMQ5XL5E4LVIGXXHML7VAB7BM:/var/lib/docker/overlay2/l/HNUDZ732VAYD3YOSPSQYZ4RI4H:/var/lib/docker/overlay2/l/7Q7JRYZBGTBK7DLSUNVEFS4FS4:/var/lib/docker/overlay2/l/FMRAP3BEPMOHM2K27DH6PIV5LB:/var/lib/docker/overlay2/l/LNRPG6JCO74I4KSKFWD5RIRPSR:/var/lib/docker/overlay2/l/HWGZ45CWLW6ISEI4WS4QKAIAUT",
-                    "upperdir=/var/lib/docker/overlay2/507702b50090d886db8a513561f1e56d582381793216e38f4e74670033a7a541/diff",
-                    "workdir=/var/lib/docker/overlay2/507702b50090d886db8a513561f1e56d582381793216e38f4e74670033a7a541/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "overlay,/var/lib/docker/overlay2/5ee9031ee82224c082b19c3a53ef8426667a298176f700e3fc434646b9e7a613/merged": {
-                "device": "overlay",
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount": "/var/lib/docker/overlay2/5ee9031ee82224c082b19c3a53ef8426667a298176f700e3fc434646b9e7a613/merged",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/DJOQD23NTRFUIDDAQTND5PK3VM:/var/lib/docker/overlay2/l/7VW3A2MDZWEM7UCPWKEUXOKLPM:/var/lib/docker/overlay2/l/4C3UQWNBQPDM52L4C4U54IB4NN:/var/lib/docker/overlay2/l/ETWGEAVP6USTPREWNP4N22A7YK:/var/lib/docker/overlay2/l/GGA6FZSAUUQZWYPBVP7SGL3MII:/var/lib/docker/overlay2/l/YNCMQPJBMVDMVLPLJYOYDLDYNR",
-                    "upperdir=/var/lib/docker/overlay2/5ee9031ee82224c082b19c3a53ef8426667a298176f700e3fc434646b9e7a613/diff",
-                    "workdir=/var/lib/docker/overlay2/5ee9031ee82224c082b19c3a53ef8426667a298176f700e3fc434646b9e7a613/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "overlay,/var/lib/docker/overlay2/6e482f512fc4d17428acafd8aef09e2226258a00410cb63fa4751a063c521f70/merged": {
-                "device": "overlay",
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount": "/var/lib/docker/overlay2/6e482f512fc4d17428acafd8aef09e2226258a00410cb63fa4751a063c521f70/merged",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/G7JWTQWUJKXXAVQ2KLDKLOUSVP:/var/lib/docker/overlay2/l/SIPPWQRDLOKOPN7UQAPE5K5SXM:/var/lib/docker/overlay2/l/IWFM7Q6WHL7RJQWGUFORMWY3FU:/var/lib/docker/overlay2/l/OOVG3LNFZKE2NVH3WTO4DZZKM3:/var/lib/docker/overlay2/l/DGSBRNYB52SPTDTJRRYV3NKCGF",
-                    "upperdir=/var/lib/docker/overlay2/6e482f512fc4d17428acafd8aef09e2226258a00410cb63fa4751a063c521f70/diff",
-                    "workdir=/var/lib/docker/overlay2/6e482f512fc4d17428acafd8aef09e2226258a00410cb63fa4751a063c521f70/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "overlay,/var/lib/docker/overlay2/6f7890ef45eaa7b4d5f2f3d31c7b4977b459dc5e3c277120c725f892adf3a343/merged": {
-                "device": "overlay",
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount": "/var/lib/docker/overlay2/6f7890ef45eaa7b4d5f2f3d31c7b4977b459dc5e3c277120c725f892adf3a343/merged",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/V6OTZYKFLR247N6CJ6JJHU6HCV:/var/lib/docker/overlay2/l/2ECPWRZZ2VYNDLXOM6NGIXV4RX:/var/lib/docker/overlay2/l/43J4MWFXGT7V6YIIO64GXTUIOD:/var/lib/docker/overlay2/l/SIPYPRCCSQ4ZSVM2YEBHNEMT47:/var/lib/docker/overlay2/l/WXKE3PFTSDMQRKWZUI7N2BL5ZW:/var/lib/docker/overlay2/l/HQFTBMT36VDL4ZQ6TLC44OVWZA:/var/lib/docker/overlay2/l/636ATXL3TE32WWZ3TERN73W6NQ:/var/lib/docker/overlay2/l/FDQJFRYEE4LZY6YUKORKVJPJAT",
-                    "upperdir=/var/lib/docker/overlay2/6f7890ef45eaa7b4d5f2f3d31c7b4977b459dc5e3c277120c725f892adf3a343/diff",
-                    "workdir=/var/lib/docker/overlay2/6f7890ef45eaa7b4d5f2f3d31c7b4977b459dc5e3c277120c725f892adf3a343/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "overlay,/var/lib/docker/overlay2/90547ef4293f42e3e0a382872adb3b25f097c804c9f30b17ed967e83c8138667/merged": {
-                "device": "overlay",
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount": "/var/lib/docker/overlay2/90547ef4293f42e3e0a382872adb3b25f097c804c9f30b17ed967e83c8138667/merged",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/Q4KKX6S7SNTFXJADCPILWSWPFB:/var/lib/docker/overlay2/l/KZNFBQK2SS2YPTIKBM2WEBWO7I:/var/lib/docker/overlay2/l/VNKG2YKIFSVZMAROLLRTZBVLKN:/var/lib/docker/overlay2/l/RHFODMSWLIEE3OMJZBAQILEB4J:/var/lib/docker/overlay2/l/CXKPR2V4MDRQL4GU5SZQYWG543:/var/lib/docker/overlay2/l/LEXR4PRTZLGND5EMJUFESZZVJM",
-                    "upperdir=/var/lib/docker/overlay2/90547ef4293f42e3e0a382872adb3b25f097c804c9f30b17ed967e83c8138667/diff",
-                    "workdir=/var/lib/docker/overlay2/90547ef4293f42e3e0a382872adb3b25f097c804c9f30b17ed967e83c8138667/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "overlay,/var/lib/docker/overlay2/965a571d8e640bd26ee64b793967e7c633275945ea5c4fd04aa079e9752a76e3/merged": {
-                "device": "overlay",
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount": "/var/lib/docker/overlay2/965a571d8e640bd26ee64b793967e7c633275945ea5c4fd04aa079e9752a76e3/merged",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/CA4M2DBIKYB6GZ4KYA2WH67CEW:/var/lib/docker/overlay2/l/LVJLIHDZ5ROJR4Y7ERJAAL5OYT:/var/lib/docker/overlay2/l/LYOMBMCFJJIBUY75G423EWXLAG:/var/lib/docker/overlay2/l/FOCHTZXHRELB5C5IW4IVPM4Y7R:/var/lib/docker/overlay2/l/WDLPTBTGXIB34XDA6RBM3SFV4D:/var/lib/docker/overlay2/l/RVW525ZRCLBXTOKYHU2IBRK6PD:/var/lib/docker/overlay2/l/73RHJHUYOO6VISFWKCS3G7H54Y:/var/lib/docker/overlay2/l/D6E6QQD5YYJ62I53I27BCPVDUX:/var/lib/docker/overlay2/l/EWLSK5FIRMSOQOKDNFLDPNPD4J:/var/lib/docker/overlay2/l/YGU2HIXSBBBY2DZP65PFZBAKYE:/var/lib/docker/overlay2/l/JHF3DMCBYGBPJ23MJBT4QKIV2T",
-                    "upperdir=/var/lib/docker/overlay2/965a571d8e640bd26ee64b793967e7c633275945ea5c4fd04aa079e9752a76e3/diff",
-                    "workdir=/var/lib/docker/overlay2/965a571d8e640bd26ee64b793967e7c633275945ea5c4fd04aa079e9752a76e3/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
-            },
-            "overlay,/var/lib/docker/overlay2/bef080335dc8fca9401e336db3d6fd69d66d38b07175beedaf4fa9cc57e4abd0/merged": {
-                "device": "overlay",
-                "fs_type": "overlay",
-                "inodes_available": "1027412",
-                "inodes_percent_used": "40%",
-                "inodes_used": "676524",
-                "kb_available": "4381524",
-                "kb_size": "26699940",
-                "kb_used": "20939088",
-                "mount": "/var/lib/docker/overlay2/bef080335dc8fca9401e336db3d6fd69d66d38b07175beedaf4fa9cc57e4abd0/merged",
-                "mount_options": [
-                    "rw",
-                    "relatime",
-                    "lowerdir=/var/lib/docker/overlay2/l/X7E5MTV27MSJN36WQQTWVDY3TV:/var/lib/docker/overlay2/l/C4X2UVCTEUCYP2S2XDNMSCYMXQ:/var/lib/docker/overlay2/l/YCXKUKCFNWUTKQZ4R7ZDXP2CNZ:/var/lib/docker/overlay2/l/TWDM5YD77C3QLPKOQ33XUEFG5M:/var/lib/docker/overlay2/l/EIM5U2MHUUAYVS5IT6MR4JQUF4:/var/lib/docker/overlay2/l/AZ3CO4DZ2AUUIQ27NF4GPNI22D:/var/lib/docker/overlay2/l/WVTNLPPSN3YETUOZB3HWANUG72:/var/lib/docker/overlay2/l/YSQM7EPSGZOHBMY4MGP7HKMEWM",
-                    "upperdir=/var/lib/docker/overlay2/bef080335dc8fca9401e336db3d6fd69d66d38b07175beedaf4fa9cc57e4abd0/diff",
-                    "workdir=/var/lib/docker/overlay2/bef080335dc8fca9401e336db3d6fd69d66d38b07175beedaf4fa9cc57e4abd0/work",
-                    "xino=off"
-                ],
-                "percent_used": "83%",
-                "total_inodes": "1703936"
             },
             "proc,/proc": {
                 "device": "proc",
@@ -5870,7 +3898,7 @@
                     "minproto=5",
                     "maxproto=5",
                     "direct",
-                    "pipe_ino=18767"
+                    "pipe_ino=16868"
                 ]
             },
             "tmpfs,/dev/shm": {
@@ -5894,12 +3922,12 @@
             "tmpfs,/run": {
                 "device": "tmpfs",
                 "fs_type": "tmpfs",
-                "inodes_available": "751246",
+                "inodes_available": "751492",
                 "inodes_percent_used": "1%",
-                "inodes_used": "1054",
-                "kb_available": "599676",
+                "inodes_used": "808",
+                "kb_available": "600684",
                 "kb_size": "601840",
-                "kb_used": "2164",
+                "kb_used": "1156",
                 "mount": "/run",
                 "mount_options": [
                     "rw",
@@ -6042,7 +4070,7 @@
     "ohai_hostname": "automation-server",
     "ohai_hostnamectl": {
         "architecture": "x86-64",
-        "boot_id": "023afeb1ccf8479c82fe6e7d68bf58b8",
+        "boot_id": "bf51e98c15374925b06b5de08d0447d1",
         "chassis": "vm",
         "icon_name": "computer-vm",
         "kernel": "Linux 5.4.0-96-generic",
@@ -6051,11 +4079,11 @@
         "static_hostname": "automation-server",
         "virtualization": "oracle"
     },
-    "ohai_idletime": "2 hours 58 minutes 13 seconds",
-    "ohai_idletime_seconds": 10693,
+    "ohai_idletime": "58 minutes 54 seconds",
+    "ohai_idletime_seconds": 3534,
     "ohai_init_package": "systemd",
-    "ohai_ip6address": "fe80::42:8bff:febd:6c21",
-    "ohai_ipaddress": "192.168.1.39",
+    "ohai_ip6address": "fe80::a00:27ff:fe16:fbf4",
+    "ohai_ipaddress": "192.168.1.38",
     "ohai_kernel": {
         "machine": "x86_64",
         "modules": {
@@ -6260,7 +4288,7 @@
                 "size": "16384"
             },
             "overlay": {
-                "refcount": "12",
+                "refcount": "0",
                 "size": "114688"
             },
             "pata_acpi": {
@@ -6367,10 +4395,6 @@
                 "size": "352256",
                 "version": "6.1.26_Ubuntu r145957"
             },
-            "veth": {
-                "refcount": "0",
-                "size": "28672"
-            },
             "video": {
                 "refcount": "0",
                 "size": "49152"
@@ -6397,7 +4421,7 @@
                 "size": "24576"
             },
             "xt_MASQUERADE": {
-                "refcount": "25",
+                "refcount": "1",
                 "size": "20480"
             },
             "xt_addrtype": {
@@ -6409,11 +4433,11 @@
                 "size": "16384"
             },
             "xt_nat": {
-                "refcount": "24",
+                "refcount": "0",
                 "size": "16384"
             },
             "xt_tcpudp": {
-                "refcount": "72",
+                "refcount": "0",
                 "size": "20480"
             },
             "zstd_compress": {
@@ -6486,20 +4510,20 @@
     "ohai_machine_id": "22076b1b4a084aec91ebf41f54b1fb95",
     "ohai_machinename": "automation-server",
     "ohai_memory": {
-        "active": "658204kB",
-        "anon_pages": "326124kB",
-        "available": "5256940kB",
+        "active": "442884kB",
+        "anon_pages": "223764kB",
+        "available": "5421740kB",
         "bounce": "0kB",
-        "buffers": "108552kB",
-        "cached": "706804kB",
+        "buffers": "78248kB",
+        "cached": "451360kB",
         "commit_limit": "7203500kB",
-        "committed_as": "10131040kB",
+        "committed_as": "1255692kB",
         "directmap": {
-            "2M": "6084608kB",
-            "4k": "141248kB"
+            "2M": "6078464kB",
+            "4k": "147392kB"
         },
-        "dirty": "820kB",
-        "free": "4616508kB",
+        "dirty": "2408kB",
+        "free": "5075600kB",
         "hugepage_size": "2048kB",
         "hugepages": {
             "free": "0",
@@ -6508,13 +4532,13 @@
             "total": "0"
         },
         "hugetlb": "0kB",
-        "inactive": "464808kB",
-        "mapped": "225356kB",
+        "inactive": "291960kB",
+        "mapped": "165660kB",
         "nfs_unstable": "0kB",
-        "page_tables": "10492kB",
-        "slab": "187348kB",
-        "slab_reclaimable": "85384kB",
-        "slab_unreclaim": "101964kB",
+        "page_tables": "3548kB",
+        "slab": "135636kB",
+        "slab_reclaimable": "63492kB",
+        "slab_unreclaim": "72144kB",
         "swap": {
             "cached": "0kB",
             "free": "4194300kB",
@@ -6523,7 +4547,7 @@
         "total": "6018400kB",
         "vmalloc_chunk": "0kB",
         "vmalloc_total": "34359738367kB",
-        "vmalloc_used": "40076kB",
+        "vmalloc_used": "31452kB",
         "writeback": "0kB"
     },
     "ohai_network": {
@@ -6532,7 +4556,7 @@
         "interfaces": {
             "docker0": {
                 "addresses": {
-                    "02:42:8B:BD:6C:21": {
+                    "02:42:91:B5:3D:B4": {
                         "family": "lladdr"
                     },
                     "172.17.0.1": {
@@ -6541,12 +4565,6 @@
                         "netmask": "255.255.0.0",
                         "prefixlen": "16",
                         "scope": "Global"
-                    },
-                    "fe80::42:8bff:febd:6c21": {
-                        "family": "inet6",
-                        "prefixlen": "64",
-                        "scope": "Link",
-                        "tags": []
                     }
                 },
                 "channel_params": {},
@@ -6567,8 +4585,7 @@
                 "flags": [
                     "BROADCAST",
                     "MULTICAST",
-                    "UP",
-                    "LOWER_UP"
+                    "UP"
                 ],
                 "mtu": "1500",
                 "number": "0",
@@ -6607,11 +4624,11 @@
                     "tx-checksum-sctp": "off",
                     "tx-checksumming": "on",
                     "tx-esp-segmentation": "on",
-                    "tx-fcoe-segmentation": "off",
+                    "tx-fcoe-segmentation": "on",
                     "tx-gre-csum-segmentation": "on",
                     "tx-gre-segmentation": "on",
                     "tx-gso-partial": "on",
-                    "tx-gso-robust": "off",
+                    "tx-gso-robust": "on",
                     "tx-ipxip4-segmentation": "on",
                     "tx-ipxip6-segmentation": "on",
                     "tx-lockless": "on",
@@ -6639,15 +4656,9 @@
                         "proto": "kernel",
                         "scope": "link",
                         "src": "172.17.0.1"
-                    },
-                    {
-                        "destination": "fe80::/64",
-                        "family": "inet6",
-                        "metric": "256",
-                        "proto": "kernel"
                     }
                 ],
-                "state": "up",
+                "state": "down",
                 "type": "docker"
             },
             "enp0s3": {
@@ -6655,7 +4666,7 @@
                     "08:00:27:16:FB:F4": {
                         "family": "lladdr"
                     },
-                    "192.168.1.39": {
+                    "192.168.1.38": {
                         "broadcast": "192.168.1.255",
                         "family": "inet",
                         "netmask": "255.255.255.0",
@@ -6803,7 +4814,7 @@
                         "family": "inet",
                         "metric": "100",
                         "proto": "dhcp",
-                        "src": "192.168.1.39",
+                        "src": "192.168.1.38",
                         "via": "192.168.1.1"
                     },
                     {
@@ -6811,7 +4822,7 @@
                         "family": "inet",
                         "proto": "kernel",
                         "scope": "link",
-                        "src": "192.168.1.39"
+                        "src": "192.168.1.38"
                     },
                     {
                         "destination": "192.168.1.1",
@@ -6819,7 +4830,7 @@
                         "metric": "100",
                         "proto": "dhcp",
                         "scope": "link",
-                        "src": "192.168.1.39"
+                        "src": "192.168.1.38"
                     },
                     {
                         "destination": "fe80::/64",
@@ -7011,1354 +5022,10 @@
                     }
                 ],
                 "state": "unknown"
-            },
-            "veth097c9ce": {
-                "addresses": {
-                    "06:EE:25:1B:3C:4E": {
-                        "family": "lladdr"
-                    },
-                    "fe80::4ee:25ff:fe1b:3c4e": {
-                        "family": "inet6",
-                        "prefixlen": "64",
-                        "scope": "Link",
-                        "tags": []
-                    }
-                },
-                "auto_negotiation": "off",
-                "channel_params": {},
-                "coalesce_params": {},
-                "driver_info": {
-                    "bus-info": "",
-                    "driver": "veth",
-                    "expansion-rom-version": "",
-                    "firmware-version": "",
-                    "supports-eeprom-access": "no",
-                    "supports-priv-flags": "no",
-                    "supports-register-dump": "no",
-                    "supports-statistics": "yes",
-                    "supports-test": "no",
-                    "version": "1.0"
-                },
-                "duplex": "Full",
-                "encapsulation": "Ethernet",
-                "flags": [
-                    "BROADCAST",
-                    "MULTICAST",
-                    "UP",
-                    "LOWER_UP"
-                ],
-                "link_speed": 10000,
-                "mdi_x": "Unknown",
-                "mtu": "1500",
-                "number": "097c9ce",
-                "offload_params": {
-                    "esp-hw-offload": "off",
-                    "esp-tx-csum-hw-offload": "off",
-                    "fcoe-mtu": "off",
-                    "generic-receive-offload": "on",
-                    "generic-segmentation-offload": "on",
-                    "highdma": "on",
-                    "hw-tc-offload": "off",
-                    "l2-fwd-offload": "off",
-                    "large-receive-offload": "off",
-                    "loopback": "off",
-                    "netns-local": "off",
-                    "ntuple-filters": "off",
-                    "receive-hashing": "off",
-                    "rx-all": "off",
-                    "rx-checksumming": "on",
-                    "rx-fcs": "off",
-                    "rx-gro-hw": "off",
-                    "rx-udp_tunnel-port-offload": "off",
-                    "rx-vlan-filter": "off",
-                    "rx-vlan-offload": "on",
-                    "rx-vlan-stag-filter": "off",
-                    "rx-vlan-stag-hw-parse": "on",
-                    "scatter-gather": "on",
-                    "tcp-segmentation-offload": "on",
-                    "tls-hw-record": "off",
-                    "tls-hw-rx-offload": "off",
-                    "tls-hw-tx-offload": "off",
-                    "tx-checksum-fcoe-crc": "off",
-                    "tx-checksum-ip-generic": "on",
-                    "tx-checksum-ipv4": "off",
-                    "tx-checksum-ipv6": "off",
-                    "tx-checksum-sctp": "on",
-                    "tx-checksumming": "on",
-                    "tx-esp-segmentation": "off",
-                    "tx-fcoe-segmentation": "off",
-                    "tx-gre-csum-segmentation": "on",
-                    "tx-gre-segmentation": "on",
-                    "tx-gso-partial": "off",
-                    "tx-gso-robust": "off",
-                    "tx-ipxip4-segmentation": "on",
-                    "tx-ipxip6-segmentation": "on",
-                    "tx-lockless": "on",
-                    "tx-nocache-copy": "off",
-                    "tx-scatter-gather": "on",
-                    "tx-scatter-gather-fraglist": "on",
-                    "tx-sctp-segmentation": "on",
-                    "tx-tcp-ecn-segmentation": "on",
-                    "tx-tcp-mangleid-segmentation": "on",
-                    "tx-tcp-segmentation": "on",
-                    "tx-tcp6-segmentation": "on",
-                    "tx-udp-segmentation": "off",
-                    "tx-udp_tnl-csum-segmentation": "on",
-                    "tx-udp_tnl-segmentation": "on",
-                    "tx-vlan-offload": "on",
-                    "tx-vlan-stag-hw-insert": "on",
-                    "vlan-challenged": "off"
-                },
-                "pause_params": {},
-                "port": "Twisted Pair",
-                "ring_params": {},
-                "routes": [
-                    {
-                        "destination": "fe80::/64",
-                        "family": "inet6",
-                        "metric": "256",
-                        "proto": "kernel"
-                    }
-                ],
-                "state": "forwarding",
-                "transceiver": "internal",
-                "type": "veth"
-            },
-            "veth1b40ebc": {
-                "addresses": {
-                    "D2:66:AE:4B:91:DB": {
-                        "family": "lladdr"
-                    },
-                    "fe80::d066:aeff:fe4b:91db": {
-                        "family": "inet6",
-                        "prefixlen": "64",
-                        "scope": "Link",
-                        "tags": []
-                    }
-                },
-                "auto_negotiation": "off",
-                "channel_params": {},
-                "coalesce_params": {},
-                "driver_info": {
-                    "bus-info": "",
-                    "driver": "veth",
-                    "expansion-rom-version": "",
-                    "firmware-version": "",
-                    "supports-eeprom-access": "no",
-                    "supports-priv-flags": "no",
-                    "supports-register-dump": "no",
-                    "supports-statistics": "yes",
-                    "supports-test": "no",
-                    "version": "1.0"
-                },
-                "duplex": "Full",
-                "encapsulation": "Ethernet",
-                "flags": [
-                    "BROADCAST",
-                    "MULTICAST",
-                    "UP",
-                    "LOWER_UP"
-                ],
-                "link_speed": 10000,
-                "mdi_x": "Unknown",
-                "mtu": "1500",
-                "number": "1b40ebc",
-                "offload_params": {
-                    "esp-hw-offload": "off",
-                    "esp-tx-csum-hw-offload": "off",
-                    "fcoe-mtu": "off",
-                    "generic-receive-offload": "on",
-                    "generic-segmentation-offload": "on",
-                    "highdma": "on",
-                    "hw-tc-offload": "off",
-                    "l2-fwd-offload": "off",
-                    "large-receive-offload": "off",
-                    "loopback": "off",
-                    "netns-local": "off",
-                    "ntuple-filters": "off",
-                    "receive-hashing": "off",
-                    "rx-all": "off",
-                    "rx-checksumming": "on",
-                    "rx-fcs": "off",
-                    "rx-gro-hw": "off",
-                    "rx-udp_tunnel-port-offload": "off",
-                    "rx-vlan-filter": "off",
-                    "rx-vlan-offload": "on",
-                    "rx-vlan-stag-filter": "off",
-                    "rx-vlan-stag-hw-parse": "on",
-                    "scatter-gather": "on",
-                    "tcp-segmentation-offload": "on",
-                    "tls-hw-record": "off",
-                    "tls-hw-rx-offload": "off",
-                    "tls-hw-tx-offload": "off",
-                    "tx-checksum-fcoe-crc": "off",
-                    "tx-checksum-ip-generic": "on",
-                    "tx-checksum-ipv4": "off",
-                    "tx-checksum-ipv6": "off",
-                    "tx-checksum-sctp": "on",
-                    "tx-checksumming": "on",
-                    "tx-esp-segmentation": "off",
-                    "tx-fcoe-segmentation": "off",
-                    "tx-gre-csum-segmentation": "on",
-                    "tx-gre-segmentation": "on",
-                    "tx-gso-partial": "off",
-                    "tx-gso-robust": "off",
-                    "tx-ipxip4-segmentation": "on",
-                    "tx-ipxip6-segmentation": "on",
-                    "tx-lockless": "on",
-                    "tx-nocache-copy": "off",
-                    "tx-scatter-gather": "on",
-                    "tx-scatter-gather-fraglist": "on",
-                    "tx-sctp-segmentation": "on",
-                    "tx-tcp-ecn-segmentation": "on",
-                    "tx-tcp-mangleid-segmentation": "on",
-                    "tx-tcp-segmentation": "on",
-                    "tx-tcp6-segmentation": "on",
-                    "tx-udp-segmentation": "off",
-                    "tx-udp_tnl-csum-segmentation": "on",
-                    "tx-udp_tnl-segmentation": "on",
-                    "tx-vlan-offload": "on",
-                    "tx-vlan-stag-hw-insert": "on",
-                    "vlan-challenged": "off"
-                },
-                "pause_params": {},
-                "port": "Twisted Pair",
-                "ring_params": {},
-                "routes": [
-                    {
-                        "destination": "fe80::/64",
-                        "family": "inet6",
-                        "metric": "256",
-                        "proto": "kernel"
-                    }
-                ],
-                "state": "forwarding",
-                "transceiver": "internal",
-                "type": "veth"
-            },
-            "veth2acd132": {
-                "addresses": {
-                    "E2:FD:EE:16:F4:BD": {
-                        "family": "lladdr"
-                    },
-                    "fe80::e0fd:eeff:fe16:f4bd": {
-                        "family": "inet6",
-                        "prefixlen": "64",
-                        "scope": "Link",
-                        "tags": []
-                    }
-                },
-                "auto_negotiation": "off",
-                "channel_params": {},
-                "coalesce_params": {},
-                "driver_info": {
-                    "bus-info": "",
-                    "driver": "veth",
-                    "expansion-rom-version": "",
-                    "firmware-version": "",
-                    "supports-eeprom-access": "no",
-                    "supports-priv-flags": "no",
-                    "supports-register-dump": "no",
-                    "supports-statistics": "yes",
-                    "supports-test": "no",
-                    "version": "1.0"
-                },
-                "duplex": "Full",
-                "encapsulation": "Ethernet",
-                "flags": [
-                    "BROADCAST",
-                    "MULTICAST",
-                    "UP",
-                    "LOWER_UP"
-                ],
-                "link_speed": 10000,
-                "mdi_x": "Unknown",
-                "mtu": "1500",
-                "number": "2acd132",
-                "offload_params": {
-                    "esp-hw-offload": "off",
-                    "esp-tx-csum-hw-offload": "off",
-                    "fcoe-mtu": "off",
-                    "generic-receive-offload": "on",
-                    "generic-segmentation-offload": "on",
-                    "highdma": "on",
-                    "hw-tc-offload": "off",
-                    "l2-fwd-offload": "off",
-                    "large-receive-offload": "off",
-                    "loopback": "off",
-                    "netns-local": "off",
-                    "ntuple-filters": "off",
-                    "receive-hashing": "off",
-                    "rx-all": "off",
-                    "rx-checksumming": "on",
-                    "rx-fcs": "off",
-                    "rx-gro-hw": "off",
-                    "rx-udp_tunnel-port-offload": "off",
-                    "rx-vlan-filter": "off",
-                    "rx-vlan-offload": "on",
-                    "rx-vlan-stag-filter": "off",
-                    "rx-vlan-stag-hw-parse": "on",
-                    "scatter-gather": "on",
-                    "tcp-segmentation-offload": "on",
-                    "tls-hw-record": "off",
-                    "tls-hw-rx-offload": "off",
-                    "tls-hw-tx-offload": "off",
-                    "tx-checksum-fcoe-crc": "off",
-                    "tx-checksum-ip-generic": "on",
-                    "tx-checksum-ipv4": "off",
-                    "tx-checksum-ipv6": "off",
-                    "tx-checksum-sctp": "on",
-                    "tx-checksumming": "on",
-                    "tx-esp-segmentation": "off",
-                    "tx-fcoe-segmentation": "off",
-                    "tx-gre-csum-segmentation": "on",
-                    "tx-gre-segmentation": "on",
-                    "tx-gso-partial": "off",
-                    "tx-gso-robust": "off",
-                    "tx-ipxip4-segmentation": "on",
-                    "tx-ipxip6-segmentation": "on",
-                    "tx-lockless": "on",
-                    "tx-nocache-copy": "off",
-                    "tx-scatter-gather": "on",
-                    "tx-scatter-gather-fraglist": "on",
-                    "tx-sctp-segmentation": "on",
-                    "tx-tcp-ecn-segmentation": "on",
-                    "tx-tcp-mangleid-segmentation": "on",
-                    "tx-tcp-segmentation": "on",
-                    "tx-tcp6-segmentation": "on",
-                    "tx-udp-segmentation": "off",
-                    "tx-udp_tnl-csum-segmentation": "on",
-                    "tx-udp_tnl-segmentation": "on",
-                    "tx-vlan-offload": "on",
-                    "tx-vlan-stag-hw-insert": "on",
-                    "vlan-challenged": "off"
-                },
-                "pause_params": {},
-                "port": "Twisted Pair",
-                "ring_params": {},
-                "routes": [
-                    {
-                        "destination": "fe80::/64",
-                        "family": "inet6",
-                        "metric": "256",
-                        "proto": "kernel"
-                    }
-                ],
-                "state": "forwarding",
-                "transceiver": "internal",
-                "type": "veth"
-            },
-            "veth44ca4af": {
-                "addresses": {
-                    "7A:26:D1:66:0B:0E": {
-                        "family": "lladdr"
-                    },
-                    "fe80::7826:d1ff:fe66:b0e": {
-                        "family": "inet6",
-                        "prefixlen": "64",
-                        "scope": "Link",
-                        "tags": []
-                    }
-                },
-                "auto_negotiation": "off",
-                "channel_params": {},
-                "coalesce_params": {},
-                "driver_info": {
-                    "bus-info": "",
-                    "driver": "veth",
-                    "expansion-rom-version": "",
-                    "firmware-version": "",
-                    "supports-eeprom-access": "no",
-                    "supports-priv-flags": "no",
-                    "supports-register-dump": "no",
-                    "supports-statistics": "yes",
-                    "supports-test": "no",
-                    "version": "1.0"
-                },
-                "duplex": "Full",
-                "encapsulation": "Ethernet",
-                "flags": [
-                    "BROADCAST",
-                    "MULTICAST",
-                    "UP",
-                    "LOWER_UP"
-                ],
-                "link_speed": 10000,
-                "mdi_x": "Unknown",
-                "mtu": "1500",
-                "number": "44ca4af",
-                "offload_params": {
-                    "esp-hw-offload": "off",
-                    "esp-tx-csum-hw-offload": "off",
-                    "fcoe-mtu": "off",
-                    "generic-receive-offload": "on",
-                    "generic-segmentation-offload": "on",
-                    "highdma": "on",
-                    "hw-tc-offload": "off",
-                    "l2-fwd-offload": "off",
-                    "large-receive-offload": "off",
-                    "loopback": "off",
-                    "netns-local": "off",
-                    "ntuple-filters": "off",
-                    "receive-hashing": "off",
-                    "rx-all": "off",
-                    "rx-checksumming": "on",
-                    "rx-fcs": "off",
-                    "rx-gro-hw": "off",
-                    "rx-udp_tunnel-port-offload": "off",
-                    "rx-vlan-filter": "off",
-                    "rx-vlan-offload": "on",
-                    "rx-vlan-stag-filter": "off",
-                    "rx-vlan-stag-hw-parse": "on",
-                    "scatter-gather": "on",
-                    "tcp-segmentation-offload": "on",
-                    "tls-hw-record": "off",
-                    "tls-hw-rx-offload": "off",
-                    "tls-hw-tx-offload": "off",
-                    "tx-checksum-fcoe-crc": "off",
-                    "tx-checksum-ip-generic": "on",
-                    "tx-checksum-ipv4": "off",
-                    "tx-checksum-ipv6": "off",
-                    "tx-checksum-sctp": "on",
-                    "tx-checksumming": "on",
-                    "tx-esp-segmentation": "off",
-                    "tx-fcoe-segmentation": "off",
-                    "tx-gre-csum-segmentation": "on",
-                    "tx-gre-segmentation": "on",
-                    "tx-gso-partial": "off",
-                    "tx-gso-robust": "off",
-                    "tx-ipxip4-segmentation": "on",
-                    "tx-ipxip6-segmentation": "on",
-                    "tx-lockless": "on",
-                    "tx-nocache-copy": "off",
-                    "tx-scatter-gather": "on",
-                    "tx-scatter-gather-fraglist": "on",
-                    "tx-sctp-segmentation": "on",
-                    "tx-tcp-ecn-segmentation": "on",
-                    "tx-tcp-mangleid-segmentation": "on",
-                    "tx-tcp-segmentation": "on",
-                    "tx-tcp6-segmentation": "on",
-                    "tx-udp-segmentation": "off",
-                    "tx-udp_tnl-csum-segmentation": "on",
-                    "tx-udp_tnl-segmentation": "on",
-                    "tx-vlan-offload": "on",
-                    "tx-vlan-stag-hw-insert": "on",
-                    "vlan-challenged": "off"
-                },
-                "pause_params": {},
-                "port": "Twisted Pair",
-                "ring_params": {},
-                "routes": [
-                    {
-                        "destination": "fe80::/64",
-                        "family": "inet6",
-                        "metric": "256",
-                        "proto": "kernel"
-                    }
-                ],
-                "state": "forwarding",
-                "transceiver": "internal",
-                "type": "veth"
-            },
-            "veth46f740b": {
-                "addresses": {
-                    "3A:D4:03:83:B2:1C": {
-                        "family": "lladdr"
-                    },
-                    "fe80::38d4:3ff:fe83:b21c": {
-                        "family": "inet6",
-                        "prefixlen": "64",
-                        "scope": "Link",
-                        "tags": []
-                    }
-                },
-                "auto_negotiation": "off",
-                "channel_params": {},
-                "coalesce_params": {},
-                "driver_info": {
-                    "bus-info": "",
-                    "driver": "veth",
-                    "expansion-rom-version": "",
-                    "firmware-version": "",
-                    "supports-eeprom-access": "no",
-                    "supports-priv-flags": "no",
-                    "supports-register-dump": "no",
-                    "supports-statistics": "yes",
-                    "supports-test": "no",
-                    "version": "1.0"
-                },
-                "duplex": "Full",
-                "encapsulation": "Ethernet",
-                "flags": [
-                    "BROADCAST",
-                    "MULTICAST",
-                    "UP",
-                    "LOWER_UP"
-                ],
-                "link_speed": 10000,
-                "mdi_x": "Unknown",
-                "mtu": "1500",
-                "number": "46f740b",
-                "offload_params": {
-                    "esp-hw-offload": "off",
-                    "esp-tx-csum-hw-offload": "off",
-                    "fcoe-mtu": "off",
-                    "generic-receive-offload": "on",
-                    "generic-segmentation-offload": "on",
-                    "highdma": "on",
-                    "hw-tc-offload": "off",
-                    "l2-fwd-offload": "off",
-                    "large-receive-offload": "off",
-                    "loopback": "off",
-                    "netns-local": "off",
-                    "ntuple-filters": "off",
-                    "receive-hashing": "off",
-                    "rx-all": "off",
-                    "rx-checksumming": "on",
-                    "rx-fcs": "off",
-                    "rx-gro-hw": "off",
-                    "rx-udp_tunnel-port-offload": "off",
-                    "rx-vlan-filter": "off",
-                    "rx-vlan-offload": "on",
-                    "rx-vlan-stag-filter": "off",
-                    "rx-vlan-stag-hw-parse": "on",
-                    "scatter-gather": "on",
-                    "tcp-segmentation-offload": "on",
-                    "tls-hw-record": "off",
-                    "tls-hw-rx-offload": "off",
-                    "tls-hw-tx-offload": "off",
-                    "tx-checksum-fcoe-crc": "off",
-                    "tx-checksum-ip-generic": "on",
-                    "tx-checksum-ipv4": "off",
-                    "tx-checksum-ipv6": "off",
-                    "tx-checksum-sctp": "on",
-                    "tx-checksumming": "on",
-                    "tx-esp-segmentation": "off",
-                    "tx-fcoe-segmentation": "off",
-                    "tx-gre-csum-segmentation": "on",
-                    "tx-gre-segmentation": "on",
-                    "tx-gso-partial": "off",
-                    "tx-gso-robust": "off",
-                    "tx-ipxip4-segmentation": "on",
-                    "tx-ipxip6-segmentation": "on",
-                    "tx-lockless": "on",
-                    "tx-nocache-copy": "off",
-                    "tx-scatter-gather": "on",
-                    "tx-scatter-gather-fraglist": "on",
-                    "tx-sctp-segmentation": "on",
-                    "tx-tcp-ecn-segmentation": "on",
-                    "tx-tcp-mangleid-segmentation": "on",
-                    "tx-tcp-segmentation": "on",
-                    "tx-tcp6-segmentation": "on",
-                    "tx-udp-segmentation": "off",
-                    "tx-udp_tnl-csum-segmentation": "on",
-                    "tx-udp_tnl-segmentation": "on",
-                    "tx-vlan-offload": "on",
-                    "tx-vlan-stag-hw-insert": "on",
-                    "vlan-challenged": "off"
-                },
-                "pause_params": {},
-                "port": "Twisted Pair",
-                "ring_params": {},
-                "routes": [
-                    {
-                        "destination": "fe80::/64",
-                        "family": "inet6",
-                        "metric": "256",
-                        "proto": "kernel"
-                    }
-                ],
-                "state": "forwarding",
-                "transceiver": "internal",
-                "type": "veth"
-            },
-            "veth54816e8": {
-                "addresses": {
-                    "5A:98:0C:DA:C7:A7": {
-                        "family": "lladdr"
-                    },
-                    "fe80::5898:cff:feda:c7a7": {
-                        "family": "inet6",
-                        "prefixlen": "64",
-                        "scope": "Link",
-                        "tags": []
-                    }
-                },
-                "auto_negotiation": "off",
-                "channel_params": {},
-                "coalesce_params": {},
-                "driver_info": {
-                    "bus-info": "",
-                    "driver": "veth",
-                    "expansion-rom-version": "",
-                    "firmware-version": "",
-                    "supports-eeprom-access": "no",
-                    "supports-priv-flags": "no",
-                    "supports-register-dump": "no",
-                    "supports-statistics": "yes",
-                    "supports-test": "no",
-                    "version": "1.0"
-                },
-                "duplex": "Full",
-                "encapsulation": "Ethernet",
-                "flags": [
-                    "BROADCAST",
-                    "MULTICAST",
-                    "UP",
-                    "LOWER_UP"
-                ],
-                "link_speed": 10000,
-                "mdi_x": "Unknown",
-                "mtu": "1500",
-                "number": "54816e8",
-                "offload_params": {
-                    "esp-hw-offload": "off",
-                    "esp-tx-csum-hw-offload": "off",
-                    "fcoe-mtu": "off",
-                    "generic-receive-offload": "on",
-                    "generic-segmentation-offload": "on",
-                    "highdma": "on",
-                    "hw-tc-offload": "off",
-                    "l2-fwd-offload": "off",
-                    "large-receive-offload": "off",
-                    "loopback": "off",
-                    "netns-local": "off",
-                    "ntuple-filters": "off",
-                    "receive-hashing": "off",
-                    "rx-all": "off",
-                    "rx-checksumming": "on",
-                    "rx-fcs": "off",
-                    "rx-gro-hw": "off",
-                    "rx-udp_tunnel-port-offload": "off",
-                    "rx-vlan-filter": "off",
-                    "rx-vlan-offload": "on",
-                    "rx-vlan-stag-filter": "off",
-                    "rx-vlan-stag-hw-parse": "on",
-                    "scatter-gather": "on",
-                    "tcp-segmentation-offload": "on",
-                    "tls-hw-record": "off",
-                    "tls-hw-rx-offload": "off",
-                    "tls-hw-tx-offload": "off",
-                    "tx-checksum-fcoe-crc": "off",
-                    "tx-checksum-ip-generic": "on",
-                    "tx-checksum-ipv4": "off",
-                    "tx-checksum-ipv6": "off",
-                    "tx-checksum-sctp": "on",
-                    "tx-checksumming": "on",
-                    "tx-esp-segmentation": "off",
-                    "tx-fcoe-segmentation": "off",
-                    "tx-gre-csum-segmentation": "on",
-                    "tx-gre-segmentation": "on",
-                    "tx-gso-partial": "off",
-                    "tx-gso-robust": "off",
-                    "tx-ipxip4-segmentation": "on",
-                    "tx-ipxip6-segmentation": "on",
-                    "tx-lockless": "on",
-                    "tx-nocache-copy": "off",
-                    "tx-scatter-gather": "on",
-                    "tx-scatter-gather-fraglist": "on",
-                    "tx-sctp-segmentation": "on",
-                    "tx-tcp-ecn-segmentation": "on",
-                    "tx-tcp-mangleid-segmentation": "on",
-                    "tx-tcp-segmentation": "on",
-                    "tx-tcp6-segmentation": "on",
-                    "tx-udp-segmentation": "off",
-                    "tx-udp_tnl-csum-segmentation": "on",
-                    "tx-udp_tnl-segmentation": "on",
-                    "tx-vlan-offload": "on",
-                    "tx-vlan-stag-hw-insert": "on",
-                    "vlan-challenged": "off"
-                },
-                "pause_params": {},
-                "port": "Twisted Pair",
-                "ring_params": {},
-                "routes": [
-                    {
-                        "destination": "fe80::/64",
-                        "family": "inet6",
-                        "metric": "256",
-                        "proto": "kernel"
-                    }
-                ],
-                "state": "forwarding",
-                "transceiver": "internal",
-                "type": "veth"
-            },
-            "veth670c22a": {
-                "addresses": {
-                    "1A:F6:77:DE:AC:0E": {
-                        "family": "lladdr"
-                    },
-                    "fe80::18f6:77ff:fede:ac0e": {
-                        "family": "inet6",
-                        "prefixlen": "64",
-                        "scope": "Link",
-                        "tags": []
-                    }
-                },
-                "auto_negotiation": "off",
-                "channel_params": {},
-                "coalesce_params": {},
-                "driver_info": {
-                    "bus-info": "",
-                    "driver": "veth",
-                    "expansion-rom-version": "",
-                    "firmware-version": "",
-                    "supports-eeprom-access": "no",
-                    "supports-priv-flags": "no",
-                    "supports-register-dump": "no",
-                    "supports-statistics": "yes",
-                    "supports-test": "no",
-                    "version": "1.0"
-                },
-                "duplex": "Full",
-                "encapsulation": "Ethernet",
-                "flags": [
-                    "BROADCAST",
-                    "MULTICAST",
-                    "UP",
-                    "LOWER_UP"
-                ],
-                "link_speed": 10000,
-                "mdi_x": "Unknown",
-                "mtu": "1500",
-                "number": "670c22a",
-                "offload_params": {
-                    "esp-hw-offload": "off",
-                    "esp-tx-csum-hw-offload": "off",
-                    "fcoe-mtu": "off",
-                    "generic-receive-offload": "on",
-                    "generic-segmentation-offload": "on",
-                    "highdma": "on",
-                    "hw-tc-offload": "off",
-                    "l2-fwd-offload": "off",
-                    "large-receive-offload": "off",
-                    "loopback": "off",
-                    "netns-local": "off",
-                    "ntuple-filters": "off",
-                    "receive-hashing": "off",
-                    "rx-all": "off",
-                    "rx-checksumming": "on",
-                    "rx-fcs": "off",
-                    "rx-gro-hw": "off",
-                    "rx-udp_tunnel-port-offload": "off",
-                    "rx-vlan-filter": "off",
-                    "rx-vlan-offload": "on",
-                    "rx-vlan-stag-filter": "off",
-                    "rx-vlan-stag-hw-parse": "on",
-                    "scatter-gather": "on",
-                    "tcp-segmentation-offload": "on",
-                    "tls-hw-record": "off",
-                    "tls-hw-rx-offload": "off",
-                    "tls-hw-tx-offload": "off",
-                    "tx-checksum-fcoe-crc": "off",
-                    "tx-checksum-ip-generic": "on",
-                    "tx-checksum-ipv4": "off",
-                    "tx-checksum-ipv6": "off",
-                    "tx-checksum-sctp": "on",
-                    "tx-checksumming": "on",
-                    "tx-esp-segmentation": "off",
-                    "tx-fcoe-segmentation": "off",
-                    "tx-gre-csum-segmentation": "on",
-                    "tx-gre-segmentation": "on",
-                    "tx-gso-partial": "off",
-                    "tx-gso-robust": "off",
-                    "tx-ipxip4-segmentation": "on",
-                    "tx-ipxip6-segmentation": "on",
-                    "tx-lockless": "on",
-                    "tx-nocache-copy": "off",
-                    "tx-scatter-gather": "on",
-                    "tx-scatter-gather-fraglist": "on",
-                    "tx-sctp-segmentation": "on",
-                    "tx-tcp-ecn-segmentation": "on",
-                    "tx-tcp-mangleid-segmentation": "on",
-                    "tx-tcp-segmentation": "on",
-                    "tx-tcp6-segmentation": "on",
-                    "tx-udp-segmentation": "off",
-                    "tx-udp_tnl-csum-segmentation": "on",
-                    "tx-udp_tnl-segmentation": "on",
-                    "tx-vlan-offload": "on",
-                    "tx-vlan-stag-hw-insert": "on",
-                    "vlan-challenged": "off"
-                },
-                "pause_params": {},
-                "port": "Twisted Pair",
-                "ring_params": {},
-                "routes": [
-                    {
-                        "destination": "fe80::/64",
-                        "family": "inet6",
-                        "metric": "256",
-                        "proto": "kernel"
-                    }
-                ],
-                "state": "forwarding",
-                "transceiver": "internal",
-                "type": "veth"
-            },
-            "veth77e9b6c": {
-                "addresses": {
-                    "3A:B2:D3:09:6E:09": {
-                        "family": "lladdr"
-                    },
-                    "fe80::38b2:d3ff:fe09:6e09": {
-                        "family": "inet6",
-                        "prefixlen": "64",
-                        "scope": "Link",
-                        "tags": []
-                    }
-                },
-                "auto_negotiation": "off",
-                "channel_params": {},
-                "coalesce_params": {},
-                "driver_info": {
-                    "bus-info": "",
-                    "driver": "veth",
-                    "expansion-rom-version": "",
-                    "firmware-version": "",
-                    "supports-eeprom-access": "no",
-                    "supports-priv-flags": "no",
-                    "supports-register-dump": "no",
-                    "supports-statistics": "yes",
-                    "supports-test": "no",
-                    "version": "1.0"
-                },
-                "duplex": "Full",
-                "encapsulation": "Ethernet",
-                "flags": [
-                    "BROADCAST",
-                    "MULTICAST",
-                    "UP",
-                    "LOWER_UP"
-                ],
-                "link_speed": 10000,
-                "mdi_x": "Unknown",
-                "mtu": "1500",
-                "number": "77e9b6c",
-                "offload_params": {
-                    "esp-hw-offload": "off",
-                    "esp-tx-csum-hw-offload": "off",
-                    "fcoe-mtu": "off",
-                    "generic-receive-offload": "on",
-                    "generic-segmentation-offload": "on",
-                    "highdma": "on",
-                    "hw-tc-offload": "off",
-                    "l2-fwd-offload": "off",
-                    "large-receive-offload": "off",
-                    "loopback": "off",
-                    "netns-local": "off",
-                    "ntuple-filters": "off",
-                    "receive-hashing": "off",
-                    "rx-all": "off",
-                    "rx-checksumming": "on",
-                    "rx-fcs": "off",
-                    "rx-gro-hw": "off",
-                    "rx-udp_tunnel-port-offload": "off",
-                    "rx-vlan-filter": "off",
-                    "rx-vlan-offload": "on",
-                    "rx-vlan-stag-filter": "off",
-                    "rx-vlan-stag-hw-parse": "on",
-                    "scatter-gather": "on",
-                    "tcp-segmentation-offload": "on",
-                    "tls-hw-record": "off",
-                    "tls-hw-rx-offload": "off",
-                    "tls-hw-tx-offload": "off",
-                    "tx-checksum-fcoe-crc": "off",
-                    "tx-checksum-ip-generic": "on",
-                    "tx-checksum-ipv4": "off",
-                    "tx-checksum-ipv6": "off",
-                    "tx-checksum-sctp": "on",
-                    "tx-checksumming": "on",
-                    "tx-esp-segmentation": "off",
-                    "tx-fcoe-segmentation": "off",
-                    "tx-gre-csum-segmentation": "on",
-                    "tx-gre-segmentation": "on",
-                    "tx-gso-partial": "off",
-                    "tx-gso-robust": "off",
-                    "tx-ipxip4-segmentation": "on",
-                    "tx-ipxip6-segmentation": "on",
-                    "tx-lockless": "on",
-                    "tx-nocache-copy": "off",
-                    "tx-scatter-gather": "on",
-                    "tx-scatter-gather-fraglist": "on",
-                    "tx-sctp-segmentation": "on",
-                    "tx-tcp-ecn-segmentation": "on",
-                    "tx-tcp-mangleid-segmentation": "on",
-                    "tx-tcp-segmentation": "on",
-                    "tx-tcp6-segmentation": "on",
-                    "tx-udp-segmentation": "off",
-                    "tx-udp_tnl-csum-segmentation": "on",
-                    "tx-udp_tnl-segmentation": "on",
-                    "tx-vlan-offload": "on",
-                    "tx-vlan-stag-hw-insert": "on",
-                    "vlan-challenged": "off"
-                },
-                "pause_params": {},
-                "port": "Twisted Pair",
-                "ring_params": {},
-                "routes": [
-                    {
-                        "destination": "fe80::/64",
-                        "family": "inet6",
-                        "metric": "256",
-                        "proto": "kernel"
-                    }
-                ],
-                "state": "forwarding",
-                "transceiver": "internal",
-                "type": "veth"
-            },
-            "veth7fd09ac": {
-                "addresses": {
-                    "D2:8A:7E:DB:07:26": {
-                        "family": "lladdr"
-                    },
-                    "fe80::d08a:7eff:fedb:726": {
-                        "family": "inet6",
-                        "prefixlen": "64",
-                        "scope": "Link",
-                        "tags": []
-                    }
-                },
-                "auto_negotiation": "off",
-                "channel_params": {},
-                "coalesce_params": {},
-                "driver_info": {
-                    "bus-info": "",
-                    "driver": "veth",
-                    "expansion-rom-version": "",
-                    "firmware-version": "",
-                    "supports-eeprom-access": "no",
-                    "supports-priv-flags": "no",
-                    "supports-register-dump": "no",
-                    "supports-statistics": "yes",
-                    "supports-test": "no",
-                    "version": "1.0"
-                },
-                "duplex": "Full",
-                "encapsulation": "Ethernet",
-                "flags": [
-                    "BROADCAST",
-                    "MULTICAST",
-                    "UP",
-                    "LOWER_UP"
-                ],
-                "link_speed": 10000,
-                "mdi_x": "Unknown",
-                "mtu": "1500",
-                "number": "7fd09ac",
-                "offload_params": {
-                    "esp-hw-offload": "off",
-                    "esp-tx-csum-hw-offload": "off",
-                    "fcoe-mtu": "off",
-                    "generic-receive-offload": "on",
-                    "generic-segmentation-offload": "on",
-                    "highdma": "on",
-                    "hw-tc-offload": "off",
-                    "l2-fwd-offload": "off",
-                    "large-receive-offload": "off",
-                    "loopback": "off",
-                    "netns-local": "off",
-                    "ntuple-filters": "off",
-                    "receive-hashing": "off",
-                    "rx-all": "off",
-                    "rx-checksumming": "on",
-                    "rx-fcs": "off",
-                    "rx-gro-hw": "off",
-                    "rx-udp_tunnel-port-offload": "off",
-                    "rx-vlan-filter": "off",
-                    "rx-vlan-offload": "on",
-                    "rx-vlan-stag-filter": "off",
-                    "rx-vlan-stag-hw-parse": "on",
-                    "scatter-gather": "on",
-                    "tcp-segmentation-offload": "on",
-                    "tls-hw-record": "off",
-                    "tls-hw-rx-offload": "off",
-                    "tls-hw-tx-offload": "off",
-                    "tx-checksum-fcoe-crc": "off",
-                    "tx-checksum-ip-generic": "on",
-                    "tx-checksum-ipv4": "off",
-                    "tx-checksum-ipv6": "off",
-                    "tx-checksum-sctp": "on",
-                    "tx-checksumming": "on",
-                    "tx-esp-segmentation": "off",
-                    "tx-fcoe-segmentation": "off",
-                    "tx-gre-csum-segmentation": "on",
-                    "tx-gre-segmentation": "on",
-                    "tx-gso-partial": "off",
-                    "tx-gso-robust": "off",
-                    "tx-ipxip4-segmentation": "on",
-                    "tx-ipxip6-segmentation": "on",
-                    "tx-lockless": "on",
-                    "tx-nocache-copy": "off",
-                    "tx-scatter-gather": "on",
-                    "tx-scatter-gather-fraglist": "on",
-                    "tx-sctp-segmentation": "on",
-                    "tx-tcp-ecn-segmentation": "on",
-                    "tx-tcp-mangleid-segmentation": "on",
-                    "tx-tcp-segmentation": "on",
-                    "tx-tcp6-segmentation": "on",
-                    "tx-udp-segmentation": "off",
-                    "tx-udp_tnl-csum-segmentation": "on",
-                    "tx-udp_tnl-segmentation": "on",
-                    "tx-vlan-offload": "on",
-                    "tx-vlan-stag-hw-insert": "on",
-                    "vlan-challenged": "off"
-                },
-                "pause_params": {},
-                "port": "Twisted Pair",
-                "ring_params": {},
-                "routes": [
-                    {
-                        "destination": "fe80::/64",
-                        "family": "inet6",
-                        "metric": "256",
-                        "proto": "kernel"
-                    }
-                ],
-                "state": "forwarding",
-                "transceiver": "internal",
-                "type": "veth"
-            },
-            "veth83bbd25": {
-                "addresses": {
-                    "F2:47:B7:23:B1:53": {
-                        "family": "lladdr"
-                    },
-                    "fe80::f047:b7ff:fe23:b153": {
-                        "family": "inet6",
-                        "prefixlen": "64",
-                        "scope": "Link",
-                        "tags": []
-                    }
-                },
-                "auto_negotiation": "off",
-                "channel_params": {},
-                "coalesce_params": {},
-                "driver_info": {
-                    "bus-info": "",
-                    "driver": "veth",
-                    "expansion-rom-version": "",
-                    "firmware-version": "",
-                    "supports-eeprom-access": "no",
-                    "supports-priv-flags": "no",
-                    "supports-register-dump": "no",
-                    "supports-statistics": "yes",
-                    "supports-test": "no",
-                    "version": "1.0"
-                },
-                "duplex": "Full",
-                "encapsulation": "Ethernet",
-                "flags": [
-                    "BROADCAST",
-                    "MULTICAST",
-                    "UP",
-                    "LOWER_UP"
-                ],
-                "link_speed": 10000,
-                "mdi_x": "Unknown",
-                "mtu": "1500",
-                "number": "83bbd25",
-                "offload_params": {
-                    "esp-hw-offload": "off",
-                    "esp-tx-csum-hw-offload": "off",
-                    "fcoe-mtu": "off",
-                    "generic-receive-offload": "on",
-                    "generic-segmentation-offload": "on",
-                    "highdma": "on",
-                    "hw-tc-offload": "off",
-                    "l2-fwd-offload": "off",
-                    "large-receive-offload": "off",
-                    "loopback": "off",
-                    "netns-local": "off",
-                    "ntuple-filters": "off",
-                    "receive-hashing": "off",
-                    "rx-all": "off",
-                    "rx-checksumming": "on",
-                    "rx-fcs": "off",
-                    "rx-gro-hw": "off",
-                    "rx-udp_tunnel-port-offload": "off",
-                    "rx-vlan-filter": "off",
-                    "rx-vlan-offload": "on",
-                    "rx-vlan-stag-filter": "off",
-                    "rx-vlan-stag-hw-parse": "on",
-                    "scatter-gather": "on",
-                    "tcp-segmentation-offload": "on",
-                    "tls-hw-record": "off",
-                    "tls-hw-rx-offload": "off",
-                    "tls-hw-tx-offload": "off",
-                    "tx-checksum-fcoe-crc": "off",
-                    "tx-checksum-ip-generic": "on",
-                    "tx-checksum-ipv4": "off",
-                    "tx-checksum-ipv6": "off",
-                    "tx-checksum-sctp": "on",
-                    "tx-checksumming": "on",
-                    "tx-esp-segmentation": "off",
-                    "tx-fcoe-segmentation": "off",
-                    "tx-gre-csum-segmentation": "on",
-                    "tx-gre-segmentation": "on",
-                    "tx-gso-partial": "off",
-                    "tx-gso-robust": "off",
-                    "tx-ipxip4-segmentation": "on",
-                    "tx-ipxip6-segmentation": "on",
-                    "tx-lockless": "on",
-                    "tx-nocache-copy": "off",
-                    "tx-scatter-gather": "on",
-                    "tx-scatter-gather-fraglist": "on",
-                    "tx-sctp-segmentation": "on",
-                    "tx-tcp-ecn-segmentation": "on",
-                    "tx-tcp-mangleid-segmentation": "on",
-                    "tx-tcp-segmentation": "on",
-                    "tx-tcp6-segmentation": "on",
-                    "tx-udp-segmentation": "off",
-                    "tx-udp_tnl-csum-segmentation": "on",
-                    "tx-udp_tnl-segmentation": "on",
-                    "tx-vlan-offload": "on",
-                    "tx-vlan-stag-hw-insert": "on",
-                    "vlan-challenged": "off"
-                },
-                "pause_params": {},
-                "port": "Twisted Pair",
-                "ring_params": {},
-                "routes": [
-                    {
-                        "destination": "fe80::/64",
-                        "family": "inet6",
-                        "metric": "256",
-                        "proto": "kernel"
-                    }
-                ],
-                "state": "forwarding",
-                "transceiver": "internal",
-                "type": "veth"
-            },
-            "veth9109100": {
-                "addresses": {
-                    "1E:7E:43:78:ED:E2": {
-                        "family": "lladdr"
-                    },
-                    "fe80::1c7e:43ff:fe78:ede2": {
-                        "family": "inet6",
-                        "prefixlen": "64",
-                        "scope": "Link",
-                        "tags": []
-                    }
-                },
-                "auto_negotiation": "off",
-                "channel_params": {},
-                "coalesce_params": {},
-                "driver_info": {
-                    "bus-info": "",
-                    "driver": "veth",
-                    "expansion-rom-version": "",
-                    "firmware-version": "",
-                    "supports-eeprom-access": "no",
-                    "supports-priv-flags": "no",
-                    "supports-register-dump": "no",
-                    "supports-statistics": "yes",
-                    "supports-test": "no",
-                    "version": "1.0"
-                },
-                "duplex": "Full",
-                "encapsulation": "Ethernet",
-                "flags": [
-                    "BROADCAST",
-                    "MULTICAST",
-                    "UP",
-                    "LOWER_UP"
-                ],
-                "link_speed": 10000,
-                "mdi_x": "Unknown",
-                "mtu": "1500",
-                "number": "9109100",
-                "offload_params": {
-                    "esp-hw-offload": "off",
-                    "esp-tx-csum-hw-offload": "off",
-                    "fcoe-mtu": "off",
-                    "generic-receive-offload": "on",
-                    "generic-segmentation-offload": "on",
-                    "highdma": "on",
-                    "hw-tc-offload": "off",
-                    "l2-fwd-offload": "off",
-                    "large-receive-offload": "off",
-                    "loopback": "off",
-                    "netns-local": "off",
-                    "ntuple-filters": "off",
-                    "receive-hashing": "off",
-                    "rx-all": "off",
-                    "rx-checksumming": "on",
-                    "rx-fcs": "off",
-                    "rx-gro-hw": "off",
-                    "rx-udp_tunnel-port-offload": "off",
-                    "rx-vlan-filter": "off",
-                    "rx-vlan-offload": "on",
-                    "rx-vlan-stag-filter": "off",
-                    "rx-vlan-stag-hw-parse": "on",
-                    "scatter-gather": "on",
-                    "tcp-segmentation-offload": "on",
-                    "tls-hw-record": "off",
-                    "tls-hw-rx-offload": "off",
-                    "tls-hw-tx-offload": "off",
-                    "tx-checksum-fcoe-crc": "off",
-                    "tx-checksum-ip-generic": "on",
-                    "tx-checksum-ipv4": "off",
-                    "tx-checksum-ipv6": "off",
-                    "tx-checksum-sctp": "on",
-                    "tx-checksumming": "on",
-                    "tx-esp-segmentation": "off",
-                    "tx-fcoe-segmentation": "off",
-                    "tx-gre-csum-segmentation": "on",
-                    "tx-gre-segmentation": "on",
-                    "tx-gso-partial": "off",
-                    "tx-gso-robust": "off",
-                    "tx-ipxip4-segmentation": "on",
-                    "tx-ipxip6-segmentation": "on",
-                    "tx-lockless": "on",
-                    "tx-nocache-copy": "off",
-                    "tx-scatter-gather": "on",
-                    "tx-scatter-gather-fraglist": "on",
-                    "tx-sctp-segmentation": "on",
-                    "tx-tcp-ecn-segmentation": "on",
-                    "tx-tcp-mangleid-segmentation": "on",
-                    "tx-tcp-segmentation": "on",
-                    "tx-tcp6-segmentation": "on",
-                    "tx-udp-segmentation": "off",
-                    "tx-udp_tnl-csum-segmentation": "on",
-                    "tx-udp_tnl-segmentation": "on",
-                    "tx-vlan-offload": "on",
-                    "tx-vlan-stag-hw-insert": "on",
-                    "vlan-challenged": "off"
-                },
-                "pause_params": {},
-                "port": "Twisted Pair",
-                "ring_params": {},
-                "routes": [
-                    {
-                        "destination": "fe80::/64",
-                        "family": "inet6",
-                        "metric": "256",
-                        "proto": "kernel"
-                    }
-                ],
-                "state": "forwarding",
-                "transceiver": "internal",
-                "type": "veth"
-            },
-            "vethaf631af": {
-                "addresses": {
-                    "E6:0B:48:FB:18:5A": {
-                        "family": "lladdr"
-                    },
-                    "fe80::e40b:48ff:fefb:185a": {
-                        "family": "inet6",
-                        "prefixlen": "64",
-                        "scope": "Link",
-                        "tags": []
-                    }
-                },
-                "auto_negotiation": "off",
-                "channel_params": {},
-                "coalesce_params": {},
-                "driver_info": {
-                    "bus-info": "",
-                    "driver": "veth",
-                    "expansion-rom-version": "",
-                    "firmware-version": "",
-                    "supports-eeprom-access": "no",
-                    "supports-priv-flags": "no",
-                    "supports-register-dump": "no",
-                    "supports-statistics": "yes",
-                    "supports-test": "no",
-                    "version": "1.0"
-                },
-                "duplex": "Full",
-                "encapsulation": "Ethernet",
-                "flags": [
-                    "BROADCAST",
-                    "MULTICAST",
-                    "UP",
-                    "LOWER_UP"
-                ],
-                "link_speed": 10000,
-                "mdi_x": "Unknown",
-                "mtu": "1500",
-                "number": "631af",
-                "offload_params": {
-                    "esp-hw-offload": "off",
-                    "esp-tx-csum-hw-offload": "off",
-                    "fcoe-mtu": "off",
-                    "generic-receive-offload": "on",
-                    "generic-segmentation-offload": "on",
-                    "highdma": "on",
-                    "hw-tc-offload": "off",
-                    "l2-fwd-offload": "off",
-                    "large-receive-offload": "off",
-                    "loopback": "off",
-                    "netns-local": "off",
-                    "ntuple-filters": "off",
-                    "receive-hashing": "off",
-                    "rx-all": "off",
-                    "rx-checksumming": "on",
-                    "rx-fcs": "off",
-                    "rx-gro-hw": "off",
-                    "rx-udp_tunnel-port-offload": "off",
-                    "rx-vlan-filter": "off",
-                    "rx-vlan-offload": "on",
-                    "rx-vlan-stag-filter": "off",
-                    "rx-vlan-stag-hw-parse": "on",
-                    "scatter-gather": "on",
-                    "tcp-segmentation-offload": "on",
-                    "tls-hw-record": "off",
-                    "tls-hw-rx-offload": "off",
-                    "tls-hw-tx-offload": "off",
-                    "tx-checksum-fcoe-crc": "off",
-                    "tx-checksum-ip-generic": "on",
-                    "tx-checksum-ipv4": "off",
-                    "tx-checksum-ipv6": "off",
-                    "tx-checksum-sctp": "on",
-                    "tx-checksumming": "on",
-                    "tx-esp-segmentation": "off",
-                    "tx-fcoe-segmentation": "off",
-                    "tx-gre-csum-segmentation": "on",
-                    "tx-gre-segmentation": "on",
-                    "tx-gso-partial": "off",
-                    "tx-gso-robust": "off",
-                    "tx-ipxip4-segmentation": "on",
-                    "tx-ipxip6-segmentation": "on",
-                    "tx-lockless": "on",
-                    "tx-nocache-copy": "off",
-                    "tx-scatter-gather": "on",
-                    "tx-scatter-gather-fraglist": "on",
-                    "tx-sctp-segmentation": "on",
-                    "tx-tcp-ecn-segmentation": "on",
-                    "tx-tcp-mangleid-segmentation": "on",
-                    "tx-tcp-segmentation": "on",
-                    "tx-tcp6-segmentation": "on",
-                    "tx-udp-segmentation": "off",
-                    "tx-udp_tnl-csum-segmentation": "on",
-                    "tx-udp_tnl-segmentation": "on",
-                    "tx-vlan-offload": "on",
-                    "tx-vlan-stag-hw-insert": "on",
-                    "vlan-challenged": "off"
-                },
-                "pause_params": {},
-                "port": "Twisted Pair",
-                "ring_params": {},
-                "routes": [
-                    {
-                        "destination": "fe80::/64",
-                        "family": "inet6",
-                        "metric": "256",
-                        "proto": "kernel"
-                    }
-                ],
-                "state": "forwarding",
-                "transceiver": "internal",
-                "type": "vethaf"
             }
         }
     },
-    "ohai_ohai_time": 1643513949.6068523,
+    "ohai_ohai_time": 1643817870.20839,
     "ohai_os": "linux",
     "ohai_os_release": {
         "bug_report_url": "https://bugs.launchpad.net/ubuntu/",
@@ -11355,7 +8022,7 @@
         "XBS5_LPBIG_OFFBIG_LIBS": null,
         "XBS5_LPBIG_OFFBIG_LINTFLAGS": null,
         "XBS5_WIDTH_RESTRICTED_ENVS": "XBS5_LP64_OFF64",
-        "_AVPHYS_PAGES": 1127969,
+        "_AVPHYS_PAGES": 1231881,
         "_NPROCESSORS_CONF": 4,
         "_NPROCESSORS_ONLN": 4,
         "_PHYS_PAGES": 1504600,
@@ -11533,8 +8200,8 @@
     "ohai_time": {
         "timezone": "UTC"
     },
-    "ohai_uptime": "45 minutes 26 seconds",
-    "ohai_uptime_seconds": 2726,
+    "ohai_uptime": "15 minutes 22 seconds",
+    "ohai_uptime_seconds": 922,
     "ohai_virtualization": {
         "role": "guest",
         "system": "vbox",
