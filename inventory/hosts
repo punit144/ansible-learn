@@ -1,25 +1,15 @@
-[all]
-
-[all:children]
-redhat
-oel
-sles
-ubuntu
-
-[redhat]
-node-centos7 ansible_host=192.168.1.203
-node-centos8 ansible_host=192.168.1.204
-#node-centos9 ansible_host=192.168.1.205
-
-[oel]
-node-oel7 ansible_host=192.168.1.206
-node-oel8 ansible_host=192.168.1.207
-#node-oel9 ansible_host=192.168.1.208
-
-[sles]
-node-sles15 ansible_host=192.168.1.212
-
-[ubuntu]
-#node-ubuntu20 ansible_host=192.168.1.209
-#node-ubuntu21 ansible_host=192.168.1.210
-#node-ubuntu22 ansible_host=192.168.1.211
+---
+all:
+  redhat:
+    node-centos7:
+      ansible_host: 192.168.1.203
+    node-centos8:
+      ansible_host: 192.168.1.204
+  oel:
+    node-oel7:
+      ansible_host: 192.168.1.206
+    node-oel8:
+      ansible_host: 192.168.1.207
+  sles:
+    node-sles15:
+      ansible_host: 192.168.1.212

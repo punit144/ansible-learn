@@ -2,6 +2,6 @@
 - name: Creating New User and Adding to Sudoers.
   hosts: all
   become: true
-  facts: false
+  gather_facts: false
   roles:
     - linux_facts_csv_report
