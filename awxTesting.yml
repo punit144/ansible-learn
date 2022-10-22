@@ -4,4 +4,4 @@
   become: true
   gather_facts: false
   roles:
-    - linux_facts_csv_report
+    - linux_command_module
