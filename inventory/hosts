@@ -2,14 +2,14 @@
 all:
   redhat:
     node-centos7:
-      ansible_host: 192.168.1.203
+      ansible_host: 192.168.56.203
     node-centos8:
-      ansible_host: 192.168.1.204
+      ansible_host: 192.168.56.204
   oel:
     node-oel7:
-      ansible_host: 192.168.1.206
+      ansible_host: 192.168.56.206
     node-oel8:
-      ansible_host: 192.168.1.207
+      ansible_host: 192.168.56.207
   sles:
     node-sles15:
-      ansible_host: 192.168.1.212
+      ansible_host: 192.168.56.212
