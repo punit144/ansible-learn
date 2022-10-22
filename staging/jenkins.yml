@@ -1,6 +1,0 @@
----
-- name: Installing jenkins on RedHat Distribution.
-  hosts: all
-  become: true
-  roles:
-    - jenkins_setup
