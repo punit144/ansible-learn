@@ -1,0 +1,12 @@
+---
+# tasks file for linux_fs_utilization
+- name: Get filesystem utilization
+  shell: "df -h --output=pcent,target | awk 'NR>1 && substr($1, 0, length($1)-1) > 0 {print $0}'"
+  register: df_output
+  tags:
+    - once
+
+- name: Display filesystems with high utilization
+  debug:
+    msg: "{{ df_output.stdout_lines }}"
+  tags: once

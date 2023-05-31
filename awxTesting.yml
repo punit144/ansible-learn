@@ -1,7 +1,0 @@
----
-- name: Creating New User and Adding to Sudoers.
-  hosts: all
-  become: true
-  gather_facts: false
-  roles:
-    - linux_command_module

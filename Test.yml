@@ -1,0 +1,8 @@
+---
+- name: Testing various ansible playbooks and roles.
+  hosts: all
+  become: true
+  gather_facts: true
+  roles:
+    - linux_fs_utilization
+  
